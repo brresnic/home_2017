@@ -1,0 +1,441 @@
+@font-face {
+  font-family: calendas;
+  src: url("../fonts/Calendas_Plus.otf") format("opentype");
+}
+
+{
+   margin:0 auto;
+   padding:0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#header {
+	max-width:300px;
+  position: relative;
+	margin:0 auto;
+  text-align: center;
+  /*text-shadow: 0 0 2px rgba(51,51,51,0.2);*/
+  color: #222;
+}
+body {
+  padding: 20px;
+  background-color: white;
+  -webkit-animation-delay: 0.1s; 
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+16
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+h3 {
+/*  text-shadow: 0 0 2px rgba(51,51,51,0.2);*/
+  font-family: 'calendas', serif; 
+  text-align: left;
+  margin-top: 38px;
+  margin-bottom: 14px;
+  font-size: 22px;
+  -moz-font-feature-settings: "swsh" 1;
+  -ms-font-feature-settings: "swsh" 1;
+  -webkit-font-feature-settings: "swsh" 1;
+  font-feature-settings: "swsh" 1;
+}
+
+#r3{
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.sc{
+  font-variant: small-caps;
+}
+
+hr {
+  color: #E6E6E6;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
+  padding: 3px;
+}
+
+#navbar .underlined {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 2px;
+  /*font-weight: bold;*/
+}
+
+#title {
+  font-family: 'calendas','Merriweather', serif; 
+  font-size: 42px;
+  margin:0 auto;
+  padding: 0;
+  letter-spacing: 2px;
+  padding-top:5px;
+    -moz-font-feature-settings: "swsh" 1;
+    -ms-font-feature-settings: "swsh" 1;
+    -webkit-font-feature-settings: "swsh" 1;
+    font-variant: small-caps;
+    -o-font-feature-settings: "swsh" 1;
+    font-feature-settings: "swsh" 1;
+}
+
+
+#noS{
+  -moz-font-feature-settings: "swsh" 0;
+  -ms-font-feature-settings: "swsh" 0;
+  -webkit-font-feature-settings: "swsh" 0;
+  font-variant: small-caps;
+  -o-font-feature-settings: "swsh" 0;
+  font-feature-settings: "swsh" 0;
+}
+
+
+
+#titlebreak{
+	position: relative;
+	margin: 5px;
+}
+
+
+
+#navbar {
+  text-align: justify;
+  width: 147px;
+  margin:0 auto;
+}
+
+#navbar:hover{
+  cursor: default;
+}
+
+#navbar a{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 16px; 
+  margin: 3px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 2px;
+  transition: border .45s ease-in-out;
+  -webkit-transition: border .45s ease-in-out;
+
+}
+
+#navbar a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 2px;
+}
+
+#text-body {
+  padding-top: 30px;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 190%;
+}
+
+.contact {
+  text-indent: 2em;
+  padding: 0px;
+  margin: 0px;
+  line-height: 100%;
+  font-style: italic;
+}
+
+#work {
+  max-width: 640px;
+  margin: 0px auto;
+  position: relative;
+  padding-top: 30px;
+}
+
+#circle p{
+  font-family: 'Open Sans',sans-serif;
+/*  font-size: 16px;*/
+  color: #333333;
+  text-shadow: 0px 0px 10px white;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  transition: border .45s ease-in-out;
+  -webkit-transition: border .45s ease-in-out;   
+}
+#icons{ /*ONE ROUNDED CORNER*/
+  width: 330px;
+  border-radius: 0px 0px 30px 0;
+}
+
+.iDesc{
+  position: relative;
+  top: -170px;
+}
+
+.iWrap {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 9px;
+  margin-right: 2px;
+  margin-left: 7px;
+  overflow: hidden;
+  cursor: default; 
+}
+
+.leftI div h3{
+  text-align: right;
+}
+
+img {
+  cursor: default; 
+}
+
+.leftI div p{
+  text-align: right;
+}
+
+#i1 {
+  border-radius: 20px 0 0 0;
+}
+#i2 {
+  border-radius: 0 20px 0 0;
+}
+#i7 {
+  border-radius: 0 0 0 20px;
+}
+#i8 {
+  border-radius: 0 0 20px 0;
+}
+
+@media screen and (min-width:639px) { 
+  #circle p{
+    position: absolute;
+    top: 315px;
+    left: 600px;
+    margin-left: -150px;
+  }
+
+  #icons{
+    position: absolute;    
+  }
+}
+
+@media screen and (max-width:638px) {
+   #circle p{
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -40px;
+   }
+
+  #work {
+    padding-top: 20px;
+  }
+
+  #icons{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -160px;
+  }
+
+  #title {
+    font-size: 36px;
+  }
+
+  #header {
+    max-width:298px;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+    text-shadow: 0 0 2px rgba(51,51,51,0.2);
+    color: #222;
+  }
+
+}
+
+#circle p:hover{
+    cursor: default;
+    text-decoration: none;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.c1 {
+    -webkit-animation: rota 4s 1 ease-out forwards;
+    animation: rota 4s 1 ease-out forwards;
+}
+
+.c2 {
+    -webkit-animation: rotb 4s 1 ease-out forwards;
+    animation: rotb 4s 1 ease-out forwards;
+}
+
+.c3 {
+  -webkit-animation: rotc 4s 1 ease-out forwards;
+    animation: rotc 4s 1 ease-out forwards;
+}
+
+.c4 {
+  -webkit-animation: rotd 4s 1 ease-out forwards;
+    animation: rotd 4s 1 ease-out forwards;
+}
+
+.c5 {
+  -webkit-animation: rote 4s 1 ease-out forwards;
+    animation: rote 4s 1 ease-out forwards;
+}
+
+/**
+ *animations
+ * Move in a circle without wrapper elements
+ * Idea by Aryeh Gregor, simplified by Lea Verou,
+ * adapted by Ben Resnick
+ */
+
+@keyframes rota {
+    from {
+        transform: rotate(0deg)
+                   translate(-100px)
+                   rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+                   translate(-100px) 
+                   rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes rota {
+    from {
+        -webkit-transform: rotate(0deg)
+                   translate(-100px)
+                   rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+                   translate(-100px) 
+                   rotate(-360deg);
+    }
+}
+
+@keyframes rotb {
+    from {
+        transform: rotate(72deg)
+                   translate(-100px)
+                   rotate(-72deg);
+    }
+    to {
+        transform: rotate(432deg)
+                   translate(-100px) 
+                   rotate(-432deg);
+    }
+}
+
+@-webkit-keyframes rotb {
+    from {
+        -webkit-transform: rotate(72deg)
+                   translate(-100px)
+                   rotate(-72deg);
+    }
+    to {
+        -webkit-transform: rotate(432deg)
+                   translate(-100px) 
+                   rotate(-432deg);
+    }
+}
+
+@keyframes rotc {
+    from {
+        transform: rotate(144deg)
+                   translate(-100px)
+                   rotate(-144deg);
+    }
+    to {
+        transform: rotate(504deg)
+                   translate(-100px) 
+                   rotate(-504deg);
+    }
+}
+
+@-webkit-keyframes rotc {
+    from {
+        -webkit-transform: rotate(144deg)
+                   translate(-100px)
+                   rotate(-144deg);
+    }
+    to {
+        -webkit-transform: rotate(504deg)
+                   translate(-100px) 
+                   rotate(-504deg);
+    }
+}
+
+@keyframes rotd {
+    from {
+        transform: rotate(216deg)
+                   translate(-100px)
+                   rotate(-216deg);
+    }
+    to {
+        transform: rotate(576deg)
+                   translate(-100px) 
+                   rotate(-576deg);
+    }
+}
+
+@-webkit-keyframes rotd {
+    from {
+        -webkit-transform: rotate(216deg)
+                   translate(-100px)
+                   rotate(-216deg);
+    }
+    to {
+        -webkit-transform: rotate(576deg)
+                   translate(-100px) 
+                   rotate(-576deg);
+    }
+}
+ 
+@keyframes rote {
+    from {
+        transform: rotate(288deg)
+                   translate(-100px)
+                   rotate(-288deg);
+    }
+    to {
+        transform: rotate(648deg)
+                   translate(-100px) 
+                   rotate(-648deg);
+    }
+}
+
+@-webkit-keyframes rote {
+    from {
+        -webkit-transform: rotate(288deg)
+                   translate(-100px)
+                   rotate(-288deg);
+    }
+    to {
+        -webkit-transform: rotate(648deg)
+                   translate(-100px) 
+                   rotate(-648deg);
+    }
+}

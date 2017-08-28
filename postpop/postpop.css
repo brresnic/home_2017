@@ -1,0 +1,444 @@
+{
+   margin:0 auto;
+   padding:0;
+}
+
+body {
+   background-color: #F0f0f0;
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-1";
+src:url("../fonts/DagnyWebPro.eot");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-light";
+src:url(../fonts/DagnyWebPro-Xlight.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-2";
+src:url(../fonts/DagnyWebPro.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-bold";
+src:url(../fonts/DagnyWebPro-Bold.woff) format("woff");
+}
+
+h1,h2,h3,h4,h5,p,li {
+padding:0;
+margin:0;
+font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#title {
+  position: absolute;
+  width: 220px;
+  left: 70px;
+  top: 25px;
+}
+
+#footer {
+  position: absolute;
+  width: 4 90px;
+  left: 70px;
+  top: 800px;
+}
+
+#bg {
+  background-color: #F0f0f0;
+  background-image: url('meadowc.jpg');
+  background-repeat: repeat; 
+  background-attachment:fixed;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: -50px;
+  z-index: -1;
+}
+
+/**
+ *animations
+ * Move in a circle without wrapper elements
+ * Idea by Aryeh Gregor, simplified by Lea Verou
+ */
+
+@keyframes rota {
+    from {
+        transform: rotate(0deg)
+                   translate(-235px)
+                   rotate(-1080deg);
+    }
+    to {
+        transform: rotate(1030deg)
+                   translate(-235px) 
+                   rotate(-1030deg);
+    }
+}
+@-webkit-keyframes rota {
+    from {
+        -webkit-transform: rotate(0deg)
+                   translate(-235px)
+                   rotate(-1080deg);
+    }
+    to {
+        -webkit-transform: rotate(1030deg)
+                   translate(-235px) 
+                   rotate(-1030deg);
+    }
+}
+
+@keyframes rotb {
+    from {
+        transform: rotate(60deg)
+                   translate(-235px)
+                   rotate(-60deg);
+    }
+    to {
+        transform: rotate(420deg)
+                   translate(-235px) 
+                   rotate(-420deg);
+    }
+}
+
+@-webkit-keyframes rotb {
+    from {
+        -webkit-transform: rotate(60deg)
+                   translate(-235px)
+                   rotate(-60deg);
+    }
+    to {
+        -webkit-transform: rotate(420deg)
+                   translate(-235px) 
+                   rotate(-420deg);
+    }
+}
+
+@keyframes rotc {
+    from {
+        transform: rotate(120deg)
+                   translate(-235px)
+                   rotate(-120deg);
+    }
+    to {
+        transform: rotate(480deg)
+                   translate(-235px) 
+                   rotate(-480deg);
+    }
+}
+
+@-webkit-keyframes rotc {
+    from {
+        -webkit-transform: rotate(120deg)
+                   translate(-235px)
+                   rotate(-120deg);
+    }
+    to {
+        -webkit-transform: rotate(480deg)
+                   translate(-235px) 
+                   rotate(-480deg);
+    }
+}
+
+@keyframes rotd {
+    from {
+        transform: rotate(180deg)
+                   translate(-235px)
+                   rotate(-180deg);
+    }
+    to {
+        transform: rotate(520deg)
+                   translate(-235px) 
+                   rotate(-520deg);
+    }
+}
+
+@-webkit-keyframes rotd {
+    from {
+        -webkit-transform: rotate(180deg)
+                   translate(-235px)
+                   rotate(-180deg);
+    }
+    to {
+        -webkit-transform: rotate(520deg)
+                   translate(-235px) 
+                   rotate(-520deg);
+    }
+}
+
+@keyframes rote {
+    from {
+        transform: rotate(260deg)
+                   translate(-235px)
+                   rotate(-260deg);
+    }
+    to {
+        transform: rotate(580deg)
+                   translate(-235px) 
+                   rotate(-580deg);
+    }
+}
+
+@-webkit-keyframes rote {
+    from {
+        -webkit-transform: rotate(260deg)
+                   translate(-235px)
+                   rotate(-260deg);
+    }
+    to {
+        -webkit-transform: rotate(580deg)
+                   translate(-235px) 
+                   rotate(-580deg);
+    }
+}
+
+@keyframes rotf {
+    from {
+        transform: rotate(320deg)
+                   translate(-235px)
+                   rotate(-320deg);
+    }
+    to {
+        transform: rotate(640deg)
+                   translate(-235px) 
+                   rotate(-640deg);
+    }
+}
+
+@-webkit-keyframes rotf {
+    from {
+        -webkit-transform: rotate(320deg)
+                   translate(-235px)
+                   rotate(-320deg);
+    }
+    to {
+        -webkit-transform: rotate(640deg)
+                   translate(-235px) 
+                   rotate(-640deg);
+    }
+}
+
+@keyframes da {
+  from {
+    transform: translate(0,0)
+               rotate(0deg);
+  }
+
+  to {
+    transform: translate(0,1290px)
+               rotate(360deg);
+  }
+}
+
+@-webkit-keyframes da {
+    from {
+        -webkit-transform: translate(0,0)
+                            rotate(0deg);
+    }
+    to {
+        -webkit-transform:  translate(0,1290px)
+                            rotate(360deg);
+    }
+}
+
+@keyframes cup {
+  from {
+    transform: translate(0,0)
+               rotate(270deg);
+  }
+
+  to {
+    transform: translate(0,1290px)
+               rotate(0deg);
+  }
+}
+
+@-webkit-keyframes cup {
+    from {
+        -webkit-transform: translate(0,0)
+                       rotate(270deg);
+    }
+    to {
+        -webkit-transform: translate(0,1290px)
+                       rotate(0deg);
+    }
+}
+
+@keyframes as {
+  from {
+    transform: translate(0,0)
+               rotate(200deg);
+  }
+
+  to {
+    transform: translate(0,0px)
+               rotate(0deg);
+  }
+}
+
+@-webkit-keyframes as {
+    from {
+        -webkit-transform: translate(0,0)
+                       rotate(200deg);
+    }
+    to {
+        -webkit-transform: translate(0,0)
+                       rotate(0deg);
+    }
+}
+
+/*
+* circle elementsw
+*/
+.cElement{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    top: 315px;
+    left: 50%;
+    margin-left: -150px;
+    text-shadow: 0px 0px 10px white;
+    color: black;
+}
+
+.dElement{
+
+    width: 300px;
+    height: 40px;
+    position: relative;
+    bottom: -50px;
+    right: -30px;
+    text-shadow: 0px 0px 10px white;
+    color: black;
+}
+
+
+.smile{
+  font-size: 100px;
+  position: relative;
+  bottom: -25px;
+  right: -90px;
+  width: 100px;
+  height: 150px;
+}
+
+.title{
+  position: relative;
+  bottom: -135px;
+  right: -0px;
+}
+
+
+#joyner{
+    position: absolute;
+    opacity:0.4;
+    left: 50%;
+    margin-left: -210px;
+    top: 315px;
+}
+
+#don1 {
+  position: absolute;
+  left: 30%;
+  top: -200px;
+    -webkit-animation: da 45s infinite linear;
+    animation: da 45s infinite linear;
+            animation-delay: 30s; 
+    -webkit-animation-delay: 30s;
+}
+
+#don2 {
+  position: absolute;
+  left: 50%;
+  top: -200px;
+    -webkit-animation: da 130s infinite linear;
+    animation: da 130s infinite linear;
+        animation: da 60s infinite linear;
+        animation-delay: 45s; 
+    -webkit-animation-delay: 45s;
+}
+
+#don3 {
+  position: absolute;
+  left: 10%;
+  top: -200px;
+    -webkit-animation: cup 30s infinite linear;
+    animation: cup 30s infinite linear;
+    animation-delay: 40s; 
+    -webkit-animation-delay: 40s; 
+}
+
+#cup1 {
+    position: absolute;
+  left: 70%;
+  top: -200px;
+    -webkit-animation: da 60s infinite linear;
+    animation: da 60s infinite linear;
+        animation-delay: 60s; 
+    -webkit-animation-delay: 60s; 
+
+}
+
+#cup2 {
+  position: absolute;
+  left: 40%;
+  top: -200px;
+    -webkit-animation: cup 70s infinite linear;
+    animation: cup 70s infinite linear;
+            animation-delay: 55s; 
+    -webkit-animation-delay: 55s; 
+}
+
+#cup3 {
+  position: absolute;
+  left: 80%;
+  top: -200px;
+    -webkit-animation: cup 100s infinite linear;
+    animation: cup 100s infinite linear;
+    animation-delay: 35s; 
+    -webkit-animation-delay: 35s; 
+}
+
+.aIMG {
+  opacity: 0.55;
+}
+
+#s1 {
+    -webkit-animation: rota 120s infinite linear;
+    animation: rota 120s infinite linear;
+}
+
+#s2 {
+    -webkit-animation: rotb 120s infinite linear;
+    animation: rotb 120s infinite linear;
+}
+
+
+#s3 {
+  -webkit-animation: rotc 120s infinite linear;
+    animation: rotc 120s infinite linear;
+}
+
+#s4 {
+  -webkit-animation: rotd 120s infinite linear;
+    animation: rotd 120s infinite linear;
+}
+
+#s5 {
+  -webkit-animation: rote 120s infinite linear;
+    animation: rote 120s infinite linear;
+}
+
+#s6 {
+  -webkit-animation: rotf 120s infinite linear;
+    animation: rotf 120s infinite linear;
+}
+
+#s7 {
+/*  -webkit-animation: as 25s infinite linear;
+    animation: as 25s infinite linear;*/
+}

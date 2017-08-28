@@ -1,0 +1,82 @@
+/*reset css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    background-color: black;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+a {
+	position: absolute;
+}
+
+#stilt{
+	top: 482px;
+	left: 550px;
+}
+#mach{
+	top: 725px;
+	left: 550px;
+}
+#dee{
+	top: 975px;
+	left: 550px;
+}
+#train{
+	top: 1225px;
+	left: 550px;
+}
+#dunton{
+	top:2846px;
+	left: 550px;
+}
+#route{
+	top:3049px;
+	left: 550px;
+}
+#city{
+	top:3263px;
+	left: 550px;
+}
+#perch{
+	top:3465px;
+	left: 550px;
+}
+#pepper{
+	top:3774px;
+	left: 550px;
+}
+#return{
+	top:3959px;
+	left: 550px;
+}
+
+#mainCheeseContent {
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+}
