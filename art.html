@@ -14,7 +14,7 @@
   </head>
 
   <body>
-      <div id = "don1" class = "aIMG">
+<!--       <div id = "don1" class = "aIMG">
           <img src = "postpop/donut.png" height = "84" width = "153">
       </div>
       <div id = "don3" class = "aIMG">
@@ -22,45 +22,38 @@
       </div>
       <div id = "cup1" class = "aIMG">
             <img src = "postpop/donut.png" height = "84" width = "153">
-      </div>
+      </div> -->
       <div id="nav">
           <div><h1>Benjamin Resnick</h1></div>
           <div>
-            <a href="index.html">Projects</a>
+            <a href="projects.html">Projects</a>
             <a class="active" href="art.html">Art</a>
             <a href="about.html">About</a>
           </div>
       </div>
-      <div id="sticky-nav">
-        <a class="active" href="#furniture">Furniture</a>
-        <a href="#novellas">Novellas</a>
-        <a href="#installations">Installations</a>
+      <div id="sticky-nav" class='art-nav'>
+        <a class="active"  href="#novellas">Novellas</a>
+        <a href="#installations">Installation</a>
         <a href="#singer">Singer/Songwriter</a>
-        <a href="#electronic">Electronic/Ambient</a>
+        <a href="#furniture">Furniture</a>
         <a href="#musicvideo">Music Videos</a>
+        <a href="#electronic">Electric/Ambient</a>
       </div>
       <div id="art">
-        <h4 id='furniture' class='section'> Furniture </h4>
-        <div>
-          <img src = "assets/Benportfoliopic.jpg">
-          <h5> Catan Table </h5>
-        </div>
-        <div>
-          <img src = "assets/Benportfoliopic.jpg">
-          <h5> Cartop Coffee Table </h5>
-        </div>
         <h4 id='novellas' class='section'> Novellas </h4>
         <div>
-          <img src = "assets/Benportfoliopic.jpg">
+          <img src = "assets/ico/bell2.jpg">
           <h5> The Bell Pepper </h5>
         </div>
         <div>
-          <img src = "assets/Benportfoliopic.jpg">
+          <img src = "assets/ico/yellow.jpg">
           <h5> The Train From Yellow Lake </h5>
         </div>
-        <h4 id='installations' class='section'> Installations </h4>
-        <div class='full-width'>
-          <img src = "assets/Benportfoliopic.jpg">
+        <h4 id='installations' class='section'> Installation </h4>
+        <div class='video full-width'>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wK8DUbZSst0?rel=0&amp;start=123&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
           <h5> The Last Stand </h5>
           <h6> Immersive Video Game </h6>
         </div>
@@ -85,14 +78,52 @@
           </div>
           <h6> Composed and Performed </h6>
         </div>
-        <div>
-          <iframe width="460" height="258" src="https://www.youtube.com/embed/xt80wjxFd5U" frameborder="0" allowfullscreen></iframe>
+        <div class='video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/xt80wjxFd5U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
           <h5> Red Planet Man </h5>
           <h6> Produced and Directed </h6>
         </div>
-        <h4 id='electronic' class='section'> Electronic Ambient </h4>
+        <h4 id='furniture' class='section'> Furniture </h4>
         <div>
-          <iframe src="https://player.vimeo.com/video/93657602" width="460" height="258" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <img src = "assets/ico/catan-1.jpg">
+          <h5> Catan Shelf and Table </h5>
+        </div>
+        <div>
+          <img src = "assets/ico/cartop.jpg">
+          <h5> Cartop Coffee Table </h5>
+        </div>
+        <h4 id='musicvideo' class='section'> Music Videos </h4>
+        <div class = 'video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/wAbbBE-qv2A?rel=0&amp;start=44&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Lemon Groove </h5>
+          <h6 class='mobile-text'> Rap </h6>
+        </div>
+        <div id='alice' class='video'>
+          <img src = "assets/ico/alice.jpg">
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NJ4Eb2-Cegs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Alice in Wonderland </h5>
+          <h6 class='mobile-text'> Jazz </h6>
+
+        </div>
+        <div class = 'full-width-video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/0rv4ae1uvGs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Inside Outside </h5>
+          <h6 class='mobile-text'> Roots Reggae </h6>
+          <h6 class='fullsize-text'> Rap, Jazz, and Roots Reggae </h6>
+        </div>
+        <h4 id='electronic' class='section'> Electric Ambient </h4>
+        <div class='video'>
+          <div>
+            <iframe src="https://player.vimeo.com/video/93657602" width="460" height="258" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
           <h5> Before Christmas </h5>
           <h6> Multimedia Performance </h6>
         </div>
@@ -117,16 +148,8 @@
           </div>
           <h6> Synthesized Audio </h6>
         </div>
-        <h4 id='musicvideo' class='section'> Music Videos </h4>
-        <div>
-          <iframe width="460" height="258" src="https://www.youtube.com/embed/wAbbBE-qv2A?start=44" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div>
-          <img class='small' src = "assets/Benportfoliopic.jpg">
-        </div>
-        <div class = 'full-width-video'>
-          <iframe width="460" height="258" src="https://www.youtube.com/embed/0rv4ae1uvGs" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <h4> Collaborators </h4>
+        <p><a href='http://rucbon.com/'>Brendon Hall</a> painted the amazing illustrations for both my novellas, and provided guitar on The Escape. <a href='https://www.facebook.com/HanzoloMusic/'>Karl Lowenguth</a> was band leader and composer for Red Planet Man and Inside, Outside. He provided vocals on Lemon Grove. Nick Summers showed up and played trumpet on three tracks. Adam Green and Pierce Shipp worked with me to come up with The Last Stand. I consider myself blessed to have such close friends with the talent and motivation to create interesting things!</p>
         <!--   <h3>What am I doing now?</h3>
           <ul>
             <li>developing crowdsurf.io, a web-based analytics platform for independent music promotors, envisioned by Evan Altman and Alex Oberg</li>
