@@ -54,7 +54,7 @@ $( document ).ready(function() {
   if($(window).width() < 900) {
     clear([]);
   }
-  window.setTimeout(function(){clear([])}, [4400]);
+  // window.setTimeout(function(){clear([])}, [4400]);
 });
 
 function clear(array) {
@@ -85,6 +85,7 @@ function clearInit() {
 
 function clearIntroText() {
   $('#intro-text').addClass('cleared');
+  $('#bg').addClass('cleared');
 }
 
 function initProjects() {
@@ -103,7 +104,7 @@ function trigger(t, projs) {
         projs.splice(p, 1);
         setTimeout(function(){
           trigger(t,projs);
-        }, 40);
+        }, 50);
         break;
       }
       if(p == projs.length - 1) {
@@ -128,7 +129,7 @@ function recursivelyFocus(t){
     $('#'+ t.pop()).addClass('focused');
     setTimeout(function(){
       recursivelyFocus(t);
-    }, 40);
+    }, 50);
   }
 }
 
