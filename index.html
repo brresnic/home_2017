@@ -15,57 +15,233 @@
 
   <body>
       <div>
+        <a id="home" class='all cleared'>
+          <img src = "assets/ico/ar.png">
+          <img src = "assets/ico/ar.png">
+        </a>
         <div id="nav">
-          <div><h1>Benjamin Resnick</h1></div>
-          <div id='intro-text' class='cleared'>
-            <p> I research thoroughly, <br>design imaginatively, <br>and write production code</p>
-          </div>
+          <div><h1>BEN RESNICK</h1></div>
         </div>
+        <div id='intro-text' class='cleared'>
+          <p> Hi! I'm a creative technologist. <br> I <a>research</a> thoroughly, <a>design</a> playfully,<br> and <a>code</a> data-driven systems.</p>
+        </div>
+
         <div id="sticky-nav">
-          <a id='projectNav' href="projects.html">Projects</a>
+          <a id='project-nav' class='all active'>Projects</a>
           <div>
-            <a id="all">All</a>
             <a id="bigdata">Big Data</a>
             <a id="user">User Behavior</a>
             <a id="spatial">Spatial Experience</a>
           </div>
-          <a href="art.html">Art</a>
-          <a href="about.html">About</a>
+          <a id='art-nav'>Art</a>
+          <div class='cleared'>
+            <a class="active"  href="#novellas">Novellas</a>
+            <a href="#installations">Installation</a>
+            <a href="#singer">Singer/Songwriter</a>
+            <a href="#furniture">Furniture</a>
+            <a href="#musicvideo">Music Videos</a>
+            <a href="#electronic">Electric/Ambient</a>
+          </div>
+          <a id="about-nav">About</a>
         </div>
-        <div id="projects">
+        <div id="projects" class='active'>
           <a id="AR">
-            <img src = "assets/ico/glasses.jpg">
+            <img src = "assets/ico/ar.png">
             <h5> AR Data Visualization</h5>
-            <h6> Data Science </h6>
+            <h6> Big Data </h6>
           </a>
-          <a id="graph">
-            <img src = "assets/ico/graph.jpg">
-            <h5> IBM Graph </h5>
-            <h6> Front End Development </h6>
-          </a>
-          <a id="AP">
-            <img src = "assets/ico/metrics.jpg">
-            <h5> AP Usage Metrics </h5>
-            <h6> Quantitative User Research </h6>
-          </a>
+          <div>
+            <a id="graph">
+              <img src = "assets/ico/graph.png">
+              <h5> IBM Graph Database </h5>
+              <h6> Big Data </h6>
+
+            </a>
+            <a id="AP">
+              <img src = "assets/ico/metrics.png">
+              <h5> AP Usage Metrics </h5>
+              <h6> User Behavior </h6>
+
+            </a>
+          </div>
           <a id="krunkle">
-            <img src = "assets/ico/krunkle.jpg">
+            <img src = "assets/ico/krunkle.png">
             <h5> Krunkle House </h5>
-            <h6> Architecture + Construction</h6>
+            <h6> Spatial Experience </h6>
+
           </a>
-          <a id="VR">
+<!--           <a id="VR">
             <img src = "assets/ico/VR.jpg">
             <h5> VR Music Visualization</h5>
             <h6> UX Design + Development</h6>
-          </a>
+          </a> -->
           <a id="bloop">
-            <img src = "assets/ico/bloop.jpg">
+            <img src = "assets/ico/box.png">
             <h5> Boxes That Bloop </h5>
-            <h6> Essay on Process </h6>
+            <h6> Spatial Experience </h6>
+
           </a>
         </div>
+      <div id="art">
+        <h4 id='novellas' class='section'> Novellas </h4>
+        <div>
+          <img src = "assets/ico/bell2.jpg">
+          <h5> The Bell Pepper </h5>
+          <h6> Novella </h6>
+        </div>
+        <div>
+          <img src = "assets/ico/yellow.jpg">
+          <h5> The Train From Yellow Lake </h5>
+          <h6> Novella </h6>
+
+        </div>
+        <h4 id='installations' class='section'> Installation </h4>
+        <div class='video full-width'>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wK8DUbZSst0?rel=0&amp;start=123&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5> The Last Stand </h5>
+          <h6> Installation </h6>
+        </div>
+        <h4 id='singer' class='section'> Singer Songwriter </h4>
+        <div>
+          <div class='audio-container'>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+          </div>
+          <h5> Composed and Performed </h5>
+          <h6> Singer/Songwriter </h6>
+        </div>
+        <div class='video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/xt80wjxFd5U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5> Produced and Directed </h5>
+          <h6> Singer/Songwriter </h6>
+        </div>
+        <h4 id='furniture' class='section'> Furniture </h4>
+        <div>
+          <img src = "assets/ico/catan-1.jpg">
+          <h5> Catan Shelf and Table </h5>
+          <h6> Furniture </h6>
+        </div>
+        <div>
+          <img src = "assets/ico/cartop.jpg">
+          <h5> Cartop Coffee Table </h5>
+          <h6> Furniture </h6>
+        </div>
+        <h4 id='musicvideo' class='section'> Music Videos </h4>
+        <div class = 'video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/wAbbBE-qv2A?rel=0&amp;start=44&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Lemon Groove </h5>
+          <h6 class='mobile-text'> Rap </h6>
+        </div>
+        <div id='alice' class='video'>
+          <img src = "assets/ico/alice.jpg">
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NJ4Eb2-Cegs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Alice in Wonderland </h5>
+          <h6 class='mobile-text'> Jazz </h6>
+
+        </div>
+        <div class = 'full-width-video'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/0rv4ae1uvGs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5 class='mobile-text'> Inside Outside </h5>
+          <h6 class='mobile-text'> Roots Reggae </h6>
+          <h5 class='fullsize-text'> Rap, Jazz, and Roots Reggae </h5>
+          <h6 class='fullsize-text'> Music Videos </h6>
+        </div>
+        <h4 id='electronic' class='section'> Electric Ambient </h4>
+        <div class='video'>
+          <div>
+            <iframe src="https://player.vimeo.com/video/93657602" width="460" height="258" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <h5> Multimedia Performance </h5>
+          <h6>Electric/Ambient </h6>
+        </div>
+        <div>
+          <div class='audio-container'>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+            <audio controls>
+              <source src="e.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Everything I Knew</p>
+
+          </div>
+          <h5> Synthesized Audio </h5>
+          <h6>Electric/Ambient </h6>
+
+        </div>
+        <h4> Collaborators </h4>
+        <p><a href='http://rucbon.com/'>Brendon Hall</a> painted the amazing illustrations for both my novellas, and provided guitar on The Escape. <a href='https://www.facebook.com/HanzoloMusic/'>Karl Lowenguth</a> was band leader and composer for Red Planet Man and Inside, Outside. He provided vocals on Lemon Grove. Nick Summers showed up and played trumpet on three tracks. Adam Green and Pierce Shipp worked with me to come up with The Last Stand. I consider myself blessed to have such close friends with the talent and motivation to create interesting things!</p>
       </div>
+
+      <div id="about">
+          <img src = "assets/Benportfoliopic.jpg">
+        <p>Hi! My name is Ben. Here's my <a>resume</a> and <a>LinkedIn</a>. </p>
+          <p> I'm a creative technologist.  I look for projects that combine imaginative thinking and real-world impact. </p>
+          <p>Most of my work experience has been on software product teams. But I’ve also designed and built a small house, crafted business proposals, and delivered user experiences that blend physical and digital spaces (sometimes leveraging AR and VR). The common thread connecting my pursuits has been collaborative creativity.</p>
+          <p>I’m a jack of many trades. On product teams, I often fall into an underserved role that helps accelerate outcomes. I’m comfortable working as a <span> user researcher</span>, <span> full-stack developer</span>, or <span> data scientist</span>. I have some pretty strong opinions on quantitative user research, a topic that draws on (and has helped me to develop) all three of those skill sets. Usually my team’s needs, and my deliverables, evolve throughout the product lifecycle (generative research &#8594 iterative prototyping &#8594 continuous deliverly). </p>
+          <p> I’ve spent the last few years at IBM Design, creating new products for data storage and analytics. During that time, I've worked across disciplines with designers, developers, and management. Within my teams, I've often found ways to improve cross-discipline workflows and collaboration. I find it fascinating to study the processes through which groups of professionals with different skill sets collectively identify and solve their user's problems!</p>
+          <p>
+           As an undergrad, I studied CS and interactive multimedia at Brown University. My interests include machine learning, the 4th Industrial Revolution, writing, architecture, and sound. </p>
+          <img class='mobile' src = "assets/Benportfoliopic.jpg">
+          <hr>
+          <h4> Imaginative Thinking + Real-World Impact </h4>
+          <img src = "assets/bluelantern.jpg">
+          <div>
+            <p>I saw a lantern </p>
+            <p>Five feet in air </p>
+            <p>Light in the night </p>
+            <p>Hovering there </p>
+            <br>
+            <p class='mobile-clear'>The realists are all boring </p>
+            <p>The dreamers leave me snoring </p>
+            <p>They’re grounded so shamelessly </p>
+            <p>Or float away aimlessly </p>
+            <br>
+            <p>But when your eyes reflect the moon </p>
+            <p>You light the sky with shades of blue </p>
+            <p>Samantha, blue lantern, will you be mine? </p>
+            <p>I’m the realest one who, like you, </p>
+            <p>Still knows how to fly</p>
+            <br>
+            <br>
+            <p class='desc'> Excerpt from Ch. 3 of <a>The Bell Pepper </a> </p>
+            <p class='desc'> Samantha is a metaphor for my interest in creative yet well grounded projects! </p>
+          </div>
+      </div>
+      </div>
+      <div id='bg3'> </div>
       <div id='bg2'> </div>
-      <div id='bg'> </div>
+      <div id='bg' class='cleared'> </div>
   </body>
 </html>
