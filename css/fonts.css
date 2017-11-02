@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'plex-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex-italic'), url('../fonts/IBMPlexSans/WOFF/IBMPlexSans-ExtraLightItalic-V01.1.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'plex-italic-light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex-italic'), url('../fonts/IBMPlexSans/WOFF/IBMPlexSans-LightItalic-V01.1.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'brandon-light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/Brandon/Brandon_light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'plex';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/IBMPlexSans/WOFF/IBMPlexSans-Light-V01.1.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'plex-medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/IBMPlexSans/WOFF/IBMPlexSans-Medium-V01.1.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'plex-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/IBMPlexSans/WOFF/IBMPlexSans-SemiBold-V01.1.woff') format('woff');
+}
+/*@font-face {
+  font-family: 'brandon-thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/Brandon/Brandon_thin.otf') format('opentype');
+}
+*/
+@font-face {
+  font-family: 'brandon-medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/Brandon/Brandon_med.otf') format('opentype');
+
+}
+
+@font-face {
+  font-family: 'brandon-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('plex'), url('../fonts/Brandon/Brandon_bld.otf') format('opentype');
+}

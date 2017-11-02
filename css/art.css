@@ -1,0 +1,144 @@
+#art-content {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+#art-content.hidden {
+  display: flex;
+  opacity: 0;
+}
+
+#art-content.active {
+  -webkit-animation: fadeInFromNone 0.4s ease-out;
+  -moz-animation: fadeInFromNone 0.4s ease-out;
+  -o-animation: fadeInFromNone 0.4s ease-out;
+  animation: fadeInFromNone 0.4s ease-out;
+  display: flex;
+  opacity: 1;
+}
+
+#art-content div:nth-child(4) {
+  flex-basis: 100%;
+}
+
+#art-content div:nth-child(4) img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  transform: rotate(90deg);
+  height: 75%;
+  opacity: .75;
+}
+
+#art-content div:nth-child(4) img:hover {
+  top: -30px;
+  opacity: 1;
+}
+
+#art-content h4{
+  flex-basis: 100%;
+  text-align: left;
+  margin: 105px 0 20px 0;
+  font-family: 'plex-italic';
+  font-size: 24px;
+  /*color: #474747;*/
+  opacity: 0;
+  height: 0px;
+  /*font-size: 28px;*/
+}
+
+#art-content .audio-container+h6 {
+  padding-top: 20px;
+}
+
+#art-content div
+
+#art-content .full-width {
+  flex-basis: 100%;
+}
+
+#art-content .full-width img {
+  display: block;
+  margin: 0 auto;
+}
+
+#art-content .full-width {
+  margin: 0 auto;
+  display: block;
+}
+
+#art-content h4:nth-child(1) {
+  margin: 0;
+}
+
+#art-content h5 {
+  font-family: 'brandon-light';
+  font-size: 18px;
+  padding: 12px 0 8px;
+  text-align: center;
+  color: #161616;
+}
+
+#art-content a:hover img {
+  opacity: 1;
+}
+
+#art-content img {
+  max-width: 330px;
+  opacity: .85;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+#art-content div#alice img {
+  max-width: 275px;
+  overflow-y: hidden;
+}
+
+#art-content div#alice iframe {
+  display: none;
+}
+
+#art-content .audio-container {
+  max-width: 250px;
+  height: 258px;
+}
+
+#art-content .audio-container audio{
+  max-width: 250px;
+}
+
+#art-content .audio-container p {
+  padding: 2px 0 33px 0;
+}
+
+#art-content .full-width-video {
+  flex-basis: 100%;
+  margin-top: 10px;
+  height: 490px;
+}
+
+#art-content .full-width-video div {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+}
+
+#art-content .full-width-video div iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#art-content .fullsize-text {
+  padding-top: 10px;
+}

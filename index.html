@@ -10,91 +10,96 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/br.js"></script>
-    <link href="css/br.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/art.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+
   </head>
 
   <body>
-      <div>
-        <a id="home" class='all cleared'>
+    <div>
+      <div id="nav" class='projs'>
+        <div><h1>BEN RESNICK</h1></div>
+        <div>
+          <a class='project-nav' class='all active'>Projects <span> </span></a>
+          <a class='art-nav'>Art</a>
+          <a class="about-nav">About</a>
+        </div>
+      </div>
+      <div id='intro-text' class='cleared'>
+        <p> Hi! I'm a creative technologist.<!-- <br> I <a>research</a> thoroughly, <a>design</a> playfully, <br> and <a>code</a> data-driven experiences.</p> -->
+      </div>
+      <a id="home" class='all cleared'>
+        <img src = "assets/ico/intro.png">
+        <img src = "assets/ico/arrow.png">
+      </a>
+      <div id="sticky-nav">
+        <a class='project-nav'>Projects</a>
+        <a class='art-nav'>Art</a>
+        <div class='cleared'>
+          <a class="active"  href="#novellas">Novellas</a>
+          <a href="#installations">Installation</a>
+          <a href="#singer">Singer/Songwriter</a>
+          <a href="#furniture">Furniture</a>
+          <a href="#musicvideo">Music Videos</a>
+          <a href="#electronic">Electric/Ambient</a>
+        </div>
+        <a class="about-nav">About</a>
+      </div>
+      <div id="projects" class='active'>
+        <a id="AR" href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b'>
           <img src = "assets/ico/ar.png">
-          <img src = "assets/ico/ar.png">
+          <h5> AR Data Visualization</h5>
+          <h6 class='bigdata'> Big Data, <!-- <span class='cleared'> and </span> --></h6>
+          <h6 class='user cleared'> User Behavior, </h6>
+          <h6 class='spatial cleared'> Spatial Experience </h6>
         </a>
-        <div id="nav">
-          <div><h1>BEN RESNICK</h1></div>
-        </div>
-        <div id='intro-text' class='cleared'>
-          <p> Hi! I'm a creative technologist. <br> I <a>research</a> thoroughly, <a>design</a> playfully,<br> and <a>code</a> data-driven systems.</p>
-        </div>
+        <div>
+          <a id="graph" href='http://befeldesign.com/ibmgraph/'>
+            <img src = "assets/ico/graph.png">
+            <h5> IBM Graph Database </h5>
+            <h6 class='bigdata'> Big Data </h6>
 
-        <div id="sticky-nav">
-          <a id='project-nav' class='all active'>Projects</a>
-          <div>
-            <a id="bigdata">Big Data</a>
-            <a id="user">User Behavior</a>
-            <a id="spatial">Spatial Experience</a>
-          </div>
-          <a id='art-nav'>Art</a>
-          <div class='cleared'>
-            <a class="active"  href="#novellas">Novellas</a>
-            <a href="#installations">Installation</a>
-            <a href="#singer">Singer/Songwriter</a>
-            <a href="#furniture">Furniture</a>
-            <a href="#musicvideo">Music Videos</a>
-            <a href="#electronic">Electric/Ambient</a>
-          </div>
-          <a id="about-nav">About</a>
-        </div>
-        <div id="projects" class='active'>
-          <a id="AR">
-            <img src = "assets/ico/ar.png">
-            <h5> AR Data Visualization</h5>
-            <h6> Big Data </h6>
           </a>
-          <div>
-            <a id="graph">
-              <img src = "assets/ico/graph.png">
-              <h5> IBM Graph Database </h5>
-              <h6> Big Data </h6>
+          <a id="AP">
+            <img src = "assets/ico/metrics.png">
+            <h5> AP Usage Metrics </h5>
+            <h6 class='user'> User Behavior </h6>
 
-            </a>
-            <a id="AP">
-              <img src = "assets/ico/metrics.png">
-              <h5> AP Usage Metrics </h5>
-              <h6> User Behavior </h6>
-
-            </a>
-          </div>
-          <a id="krunkle">
+          </a>
+          <a href='http://smallhouseswoon.com/montpelier-home/' id="krunkle">
             <img src = "assets/ico/krunkle.png">
             <h5> Krunkle House </h5>
-            <h6> Spatial Experience </h6>
-
+            <h6 class='spatial'> Spatial Experience </h6>
           </a>
-<!--           <a id="VR">
+ <!--           <a id="VR">
             <img src = "assets/ico/VR.jpg">
             <h5> VR Music Visualization</h5>
             <h6> UX Design + Development</h6>
           </a> -->
-          <a id="bloop">
+          <a href='projects/boxes-that-bloop.html' id="bloop">
             <img src = "assets/ico/box.png">
             <h5> Boxes That Bloop </h5>
-            <h6> Spatial Experience </h6>
-
+            <h6 class='spatial'> Spatial Experience </h6>
           </a>
         </div>
-      <div id="art">
+      </div>
+      <div id="art-content">
         <h4 id='novellas' class='section'> Novellas </h4>
-        <div>
+        <a href="bell/pepper.html">
           <img src = "assets/ico/bell2.jpg">
           <h5> The Bell Pepper </h5>
           <h6> Novella </h6>
-        </div>
-        <div>
+        </a>
+        <a href="YellowLake/yellowlake.html">
           <img src = "assets/ico/yellow.jpg">
           <h5> The Train From Yellow Lake </h5>
           <h6> Novella </h6>
-
-        </div>
+        </a>
+        <div> <img src = "assets/ico/arrow.png"> </div>
         <h4 id='installations' class='section'> Installation </h4>
         <div class='video full-width'>
           <div>
@@ -204,15 +209,17 @@
         <p><a href='http://rucbon.com/'>Brendon Hall</a> painted the amazing illustrations for both my novellas, and provided guitar on The Escape. <a href='https://www.facebook.com/HanzoloMusic/'>Karl Lowenguth</a> was band leader and composer for Red Planet Man and Inside, Outside. He provided vocals on Lemon Grove. Nick Summers showed up and played trumpet on three tracks. Adam Green and Pierce Shipp worked with me to come up with The Last Stand. I consider myself blessed to have such close friends with the talent and motivation to create interesting things!</p>
       </div>
 
-      <div id="about">
+      <div id="about-content">
           <img src = "assets/Benportfoliopic.jpg">
         <p>Hi! My name is Ben. Here's my <a>resume</a> and <a>LinkedIn</a>. </p>
           <p> I'm a creative technologist.  I look for projects that combine imaginative thinking and real-world impact. </p>
           <p>Most of my work experience has been on software product teams. But I’ve also designed and built a small house, crafted business proposals, and delivered user experiences that blend physical and digital spaces (sometimes leveraging AR and VR). The common thread connecting my pursuits has been collaborative creativity.</p>
-          <p>I’m a jack of many trades. On product teams, I often fall into an underserved role that helps accelerate outcomes. I’m comfortable working as a <span> user researcher</span>, <span> full-stack developer</span>, or <span> data scientist</span>. I have some pretty strong opinions on quantitative user research, a topic that draws on (and has helped me to develop) all three of those skill sets. Usually my team’s needs, and my deliverables, evolve throughout the product lifecycle (generative research &#8594 iterative prototyping &#8594 continuous deliverly). </p>
-          <p> I’ve spent the last few years at IBM Design, creating new products for data storage and analytics. During that time, I've worked across disciplines with designers, developers, and management. Within my teams, I've often found ways to improve cross-discipline workflows and collaboration. I find it fascinating to study the processes through which groups of professionals with different skill sets collectively identify and solve their user's problems!</p>
-          <p>
-           As an undergrad, I studied CS and interactive multimedia at Brown University. My interests include machine learning, the 4th Industrial Revolution, writing, architecture, and sound. </p>
+          <p>I’m a jack of many trades. On product teams, I often fall into an underserved role that helps to accelerate outcomes. I’m comfortable performing <span> user research</span>, <span> full-stack development</span>, and <span> data science</span>. I have some pretty strong opinions on quantitative user research, a topic that draws on (and has helped me to develop) all three of those skill sets. I enjoy writing copy, tutorials, and product specifications. Usually my team’s needs, and my deliverables, evolve throughout the product lifecycle (generative research &#8594 iterative prototyping &#8594 continuous deliverly). </p>
+<!--            <p>
+           As an undergrad, I studied CS and interactive multimedia at Brown University. </p> -->
+          <p> I’ve spent the last few years at IBM Design, creating new products for data storage and analytics. During that time, I've worked across disciplines with designers, developers, and management. Within my teams, I've often found ways to improve cross-discipline workflows and collaboration. I find it fascinating to study the processes through which groups of professionals with different skill sets collectively identify and solve their user's problems! </p>
+          <p> I plan on spending my career at the intersection of big data, user-centered design, and emerging technologies. My interests include machine learning, the 4th Industrial Revolution, writing, architecture, and sound.  </p><!-- In the near term, I hope to contribute to the creation of some important products and services. In the next five years, I see myself moving into project management. In twenty years, I hope to be studying and writing about technology's impact on society. </p>
+-->
           <img class='mobile' src = "assets/Benportfoliopic.jpg">
           <hr>
           <h4> Imaginative Thinking + Real-World Impact </h4>
@@ -239,9 +246,136 @@
             <p class='desc'> Samantha is a metaphor for my interest in creative yet well grounded projects! </p>
           </div>
       </div>
-      </div>
-      <div id='bg3'> </div>
-      <div id='bg2'> </div>
-      <div id='bg' class='cleared'> </div>
+    </div>
+    <div id='bg3'> </div>
+    <div id='bg2'> </div>
+    <div id='bg' class='cleared'> </div>
+    <div id='texture'>
+      <svg
+        width="3534"
+        height="3061"
+        viewBox="0 0 3534 3061"
+        xmlns="https://www.w3.org/2000/svg">
+        <title>Background Texture</title>
+        <alt>""</alt>
+        <g class='SVGStyle'
+          stroke="#ffffff"
+          fill="none"
+          fill-rule="evenodd"
+          strokeLinecap="round"
+          strokeLinejoin="round">
+          <path d="M2734.69 940.59l128.665 908.398" strokeDasharray="0,25.844"/>
+          <path d="M2879.85 1840.543l477.235-690.285" strokeDasharray="0,25.821"/>
+          <path d="M3340.067 1131l-596.82-211.678" strokeDasharray="0,25.847"/>
+          <path d="M3368.486 1165.505l127.855 814.778" strokeDasharray="0,26.183"/>
+          <path d="M3473.043 1987.96l-595.212-123.55" strokeDasharray="0,25.868"/>
+          <path d="M2875.97 1885.268l318.677 692.833" strokeDasharray="0,25.851"/>
+          <path d="M3211.523 2566.897l281.11-562.206" strokeDasharray="0,25.656"/>
+          <path d="M3496.908 2019.027l-62.14 1096.94" strokeDasharray="0,25.852"/>
+          <path d="M2829.727 3290.418l-236.564-463.12" strokeDasharray="0,26.669"/>
+          <path d="M2611.616 2806.4l576.174-212.044" strokeDasharray="0,26.126"/>
+          <path d="M3189.326 2614l-316.305 712.58" strokeDasharray="0,26.428"/>
+          <path d="M3423.65 3104.945l-223.602-515.1-625.348-424.378" strokeDasharray="0,26.085"/>
+          <path d="M2582.737 2139.62l273.016-268.576" strokeDasharray="0,26.412"/>
+          <path d="M2849.258 1841l-278.4-363.68" strokeDasharray="0,26.172"/>
+          <path d="M2570.547 1441.84l156.697-514.295" strokeDasharray="0,26.226"/>
+          <path d="M2706.83 905.93L2064.59 665.536" strokeDasharray="0,25.878"/>
+          <path d="M2035.576 681.065l-380.095 451.44" strokeDasharray="0,26.229"/>
+          <path d="M1664.48 1161.5l514.625 559.44" strokeDasharray="0,25.767"/>
+          <path d="M2531.51 1479.392l-332.943 243.186" strokeDasharray="0,26.6"/>
+          <path d="M2204.683 1749.907l328.686 379.95" strokeDasharray="0,25.764"/>
+          <path d="M2527.113 2161.19l-330.38 485.815" strokeDasharray="0,26.111"/>
+          <path d="M2212.962 2668.314l318.19 141.926" strokeDasharray="0,25.808"/>
+          <path d="M2519.695 2826.78l-615.924 299.052" strokeDasharray="0,25.837"/>
+          <path d="M1072.64 2196.927l-563.354 324.6" strokeDasharray="0,26.538"/>
+          <path d="M494.07 2554.003l-91.075 633.316" strokeDasharray="0,26.116"/>
+          <path d="M1273.288 3385.78l-307.182-490.46" strokeDasharray="0,25.721"/>
+          <path d="M982.773 2872.886l435.407-213.783 758.127-1.28" strokeDasharray="0,26.172"/>
+          <path d="M2174.642 2636.153l-324.887-476.804-268.09-494.155-741.854-260.512"
+            strokeDasharray="0,26.196"
+          />
+          <path d="M821.736 1426.325l-122.92 558.63" strokeDasharray="0,26.604"/>
+          <path d="M670.695 1994.092l-391.57-59.745" strokeDasharray="0,25.555"/>
+          <path d="M266.45 1906.17l-1.264-748.175" strokeDasharray="0,26.252"/>
+          <path d="M1413.545 2716.565l-124.26 678.215" strokeDasharray="0,26.019"/>
+          <path d="M1310.642 3396.764l581.508-265.29 290.32-462.64" strokeDasharray="0,26.052"/>
+          <path d="M2161.473 1727.587l-566.63-60.974" strokeDasharray="0,26.507"/>
+          <path d="M1584.933 1639.062l60.467-483.458" strokeDasharray="0,26.336"/>
+          <path d="M1626.444 1125.988l-483.87-388.908" strokeDasharray="0,26.417"/>
+          <path d="M1158.496 727.933l904.424-30.093" strokeDasharray="0,26.23"/>
+          <path d="M2089.938 719.39l466.01 736.544" strokeDasharray="0,26.017"/>
+          <path d="M1832.492 2179.34l-405.68 469.768" strokeDasharray="0,26.412"/>
+          <path d="M1406.526 2635.48l-238.898-484.262" strokeDasharray="0,26.341"/>
+          <path d="M1179.295 2119.648l393.623-444.574" strokeDasharray="0,26.391"/>
+          <path d="M1557.062 1674.438L708.26 1993.325" strokeDasharray="0,26.282"/>
+          <path d="M684.315 1974.89L270.985 1156.4" strokeDasharray="0,25.829"/>
+          <path d="M288.6 1133.625l831.963-399.197" strokeDasharray="0,25.994"/>
+          <path d="M1121.394 752.79l-288.498 635.56" strokeDasharray="0,26.339"/>
+          <path d="M803.427 1389.722l-468.5-207.097" strokeDasharray="0,26.268"/>
+          <path d="M1051.548 2119.433l-342.89-117.147" strokeDasharray="0,26.841"/>
+          <path d="M686.95 2022.047l-184.658 494.056" strokeDasharray="0,25.729"/>
+          <path d="M518.765 2544.347l430.025 331.977" strokeDasharray="0,26.5"/>
+          <path d="M488.151 2503.33l-216.837-558.5" strokeDasharray="0,26.627"/>
+          <path d="M2560.84 1463.668l2.282 1351.794M1134.697 2160.555l1428.254-2.41"
+            strokeDasharray="0,26.124"
+          />
+          <path d="M3237.5 1047.388l-551.354 733.314" strokeDasharray="0,25.844"/>
+          <path d="M2703.782 1786.394l825.56-150.65" strokeDasharray="0,25.821"/>
+          <path d="M3530.927 1610.093l-272.337-571.695" strokeDasharray="0,25.847"/>
+          <path d="M3526.623 1654.587l-485.728 666.543" strokeDasharray="0,26.183"/>
+          <path d="M3018.992 2310.083l-333.516-508.24" strokeDasharray="0,25.868"/>
+          <path d="M2669.412 1815.276l-264.568 715.245" strokeDasharray="0,25.851"/>
+          <path d="M2424.7 2534.53l596.314-198.763" strokeDasharray="0,25.656"/>
+          <path d="M3013.9 2348.927l-819.595 731.714" strokeDasharray="0,25.852"/>
+          <path d="M1643.122 2776.168l160.2-494.752" strokeDasharray="0,26.669"/>
+          <path d="M1831.148 2279.686l557.353 257.48" strokeDasharray="0,26.126"/>
+          <path d="M2375.698 2552.142l-727.532 280.21" strokeDasharray="0,26.428"/>
+          <path d="M1659.696 2848.064l513.035 235.704" strokeDasharray="0,26.26"/>
+          <path d="M2194.238 3064.985l206.122-522.34-142.108-742.27" strokeDasharray="0,26.085"/>
+          <path d="M2282.21 1787.783l382.964 3.14" strokeDasharray="0,26.412"/>
+          <path d="M2681.826 1765.086l60.303-454.022" strokeDasharray="0,26.172"/>
+          <path d="M2766.996 1285.757l474.463-252.86" strokeDasharray="0,26.226"/>
+          <path d="M3242.31 1003.18l-284.152-624.12" strokeDasharray="0,25.878"/>
+          <path d="M2926.664 369.527l-587.984 50.448" strokeDasharray="0,26.229"/>
+          <path d="M2324.54 446.842l-31.69 759.48" strokeDasharray="0,25.767"/>
+          <path d="M2712.84 1284.708l-407.385-63.468" strokeDasharray="0,26.6"/>
+          <path d="M2290.455 1244.89l-36.25 501.08" strokeDasharray="0,25.764"/>
+          <path d="M2227.626 1763.704l-577.136 109.91" strokeDasharray="0,26.111"/>
+          <path d="M1646.898 1900.155l124.638 325.35" strokeDasharray="0,25.808"/>
+          <path d="M1751.737 2229.102L1104.75 2005.04" strokeDasharray="0,25.837"/>
+          <path d="M1081.3 2023.744l-208.006 424.25" strokeDasharray="0,25.54"/>
+          <path d="M890.95 2470.903l733.245 360.476" strokeDasharray="0,25.938"/>
+          <path d="M1173.89 760.506L546.01 591.68" strokeDasharray="0,26.538"/>
+          <path d="M512.288 603.885L.066 987.307" strokeDasharray="0,26.116"/>
+          <path d="M3.32 1017.216l459.19 739.838" strokeDasharray="0,25.993"/>
+          <path d="M475.123 1743.03L604.72 1179.01" strokeDasharray="0,25.721"/>
+          <path d="M632.368 1174.934l459.047 156.712 536.98 535.172" strokeDasharray="0,26.172"/>
+          <path d="M1642.543 1850.317l107.42-566.88 159.853-538.99-340.36-708.78"
+            strokeDasharray="0,26.196"
+          />
+          <path d="M1541.37 38.19l-481.928 308.095" strokeDasharray="0,26.604"/>
+          <path d="M1033.097 332.86L798.46 13.734" strokeDasharray="0,25.555"/>
+          <path d="M1047.505 1369L480.07 1760.705" strokeDasharray="0,26.019"/>
+          <path d="M493.77 1777.21l598.775 223.6 532.423-121.85" strokeDasharray="0,26.052"/>
+          <path d="M2275.684 1198.552L1918.13 754.77" strokeDasharray="0,26.507"/>
+          <path d="M1930.606 728.28l384.613-299.1" strokeDasharray="0,26.336"/>
+          <path d="M2322.756 394.835L2255.61-222.31" strokeDasharray="0,26.417"/>
+          <path d="M2273.334-217.522l660.803 618.246" strokeDasharray="0,26.23"/>
+          <path d="M2938.003 435.067L2746.707 1285.4" strokeDasharray="0,26.017"/>
+          <path d="M1723.622 1285.364l-619.036 45.317" strokeDasharray="0,26.412"/>
+          <path d="M1099.878 1306.702l173.498-511.352" strokeDasharray="0,26.341"/>
+          <path d="M1303.95 781.276l592.695-36.028" strokeDasharray="0,26.391"/>
+          <path d="M1885.883 733.587L1060.2 358.88" strokeDasharray="0,26.282"/>
+          <path d="M1056.305 328.914l286.494-871.03" strokeDasharray="0,25.829"/>
+          <path d="M2229.523-226.18l-653.41 245.41" strokeDasharray="0,26.339"/>
+          <path d="M1213.772 690.793L1054.147 365.5" strokeDasharray="0,26.841"/>
+          <path d="M1024.824 364.122L544.9 582.9" strokeDasharray="0,25.729"/>
+          <path d="M536.577 614.52l69.33 538.816" strokeDasharray="0,26.5"/>
+          <path d="M543.933 563.87L785.523 15.62" strokeDasharray="0,26.627"/>
+          <path d="M854.824 2437.158l-379.036-657.91" strokeDasharray="0,25.738"/>
+          <path d="M2744.698 1294.33l-954.25 957.475" strokeDasharray="0,26.124"/>
+        </g>
+      </svg>
+    </div>
   </body>
 </html>

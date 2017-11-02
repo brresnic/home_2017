@@ -1,0 +1,195 @@
+#projects {
+  justify-content: space-between;
+  margin: 0 0 -40px 0;
+  opacity: 0;
+  display: none;
+}
+
+#projects.active {
+  -webkit-animation: fadeInFromNone 0.4s ease-out;
+  -moz-animation: fadeInFromNone 0.4s ease-out;
+  -o-animation: fadeInFromNone 0.4s ease-out;
+  animation: fadeInFromNone 0.4s ease-out;
+  opacity: 1;
+  display: flex;
+}
+
+#projects div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 380px;
+}
+
+#projects a {
+  width: 170px;
+  opacity: 0;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  pointer-events: none;
+}
+
+#projects a.focused {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#projects a img{
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
+  opacity: .62;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#projects a:hover img {
+  opacity: 1;
+}
+
+#projects a h5 {
+  font-family: 'brandon-light';
+  font-size: 18px;
+  padding: 10px 0 5px;
+  text-align: center;
+  color: #161616;
+}
+
+#projects a h6{
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+#projects a h6.focused {
+  font-size: 21px;
+  bottom: 33px;
+}
+
+#projects a h6.filtered {
+  pointer-events: none;
+}
+
+#projects div a:nth-child(1) {
+  width: 170px;
+}
+
+#projects div a {
+  height: 150px;
+  position: relative;
+}
+
+#projects div a h6{
+  margin: 0 auto;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+#projects div a h5{
+  margin: 0 auto;
+  position: absolute;
+  bottom: 53px;
+  width: 100%;
+}
+
+#projects div a img{
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+
+#projects #AR {
+  width: 360px;
+  position: relative;
+  top: 60px;
+  max-height: 225px;
+}
+
+#projects #AR img{
+  max-width: 360px;
+  position: relative;
+  right: 80px;
+}
+
+#projects #AR h5{
+  position: relative;
+  bottom: 38px;
+  right: 35px;
+}
+
+#projects #AR h6{
+  position: relative;
+  bottom: 38px;
+  display: inline-block;
+  white-space: nowrap;
+  left: 15px;
+}
+
+#projects #AR h6 span{
+  width: 20px;
+  height: 14px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  opacity: 1;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+#projects #AR h6 span.cleared {
+  width: 0px;
+  opacity: 0;
+  height: 0px;
+}
+
+#projects #AR h6.cleared {
+/*  opacity: 0;
+  pointer-events: none;*/
+}
+
+#projects #AR h6 span.active {
+  width: 20px;
+  opacity: 1;
+  height: 14px;
+}
+
+#projects #AR h6.active {
+  opacity: 1;
+}
+
+#projects #AR h6:nth-child(5) {
+/*  position: relative;
+  top: -55px;*/
+}
+
+
+#projects div a:nth-child(1) img{
+  position: relative;
+  top: 4px;
+  max-width: 90px;
+}
+
+#projects div a:nth-child(2) img{
+  position: relative;
+  top: 12px;
+}
+
+#projects div a:nth-child(3) {
+  padding-top: 32px;
+}
+
+#projects div a:nth-child(3) img{
+  position: relative;
+  left: -12px;
+}
+
+#projects div a:nth-child(4) {
+  padding-top: 32px;
+}
+
+#projects div a:nth-child(4) img{
+  max-width: 105px;
+}

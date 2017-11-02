@@ -1,180 +1,267 @@
 var initialized = false;
 $( document ).ready(function() {
+
+  // initial nav based on hash
+  if(window.location.hash) {
+    var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+    triggerPage(hash);
+  } else {
+    triggerPage('proj');
+  }
+
+  // register a function that is triggered on scroll
   $(window).scroll(function() {
-    adjustMenuItems();
+    var position = $(this).scrollTop();
+    adjustMenuItems(position);
+    if(position > 120) {
+      $('#sticky-nav').addClass('show');
+      if($('.art-nav').hasClass('active')) {
+        $('.art-nav + div').removeClass('cleared');
+      }
+    } else {
+      $('#sticky-nav').removeClass('show');
+      $('.art-nav + div').addClass('cleared');
+    }
   });
 
-  // programatically change content when nav items are pressed
-  // projects
+  // scroll when the arrow on the art page is clicked
+  $('#art-content div:nth-child(4) img').click(
+  function(){
+    $('html, body').animate({
+        scrollTop: 800
+     }, 350);
+  });
+
+  // "one page app" navigation
   $('#nav div h1').click(
   function(){
-    $('#sticky-nav').addClass('intro');
-    $('#intro-text').removeClass('cleared');
-    $('#home').removeClass('cleared');
-    $('#nav div h1').addClass('intro');
-
-
-    $('#project-nav').removeClass('active');
-    $('#art-nav').removeClass('active');
-    $('#about-nav').removeClass('active');
-
-
-    // swap content
-    $('#projects').removeClass('active');
-    $('#art').removeClass('active');
-    $('#about').removeClass('active');
-    // TODO add class hidden on timeout e.g.
-                  //    box.removeClass('hidden');
-                  // setTimeout(function () {
-                  //   box.removeClass('visuallyhidden');
-                  // }, 20);
-    // TODO abstract this code into a function
-
-    // swap subnav
-    $('#art-nav + div').addClass('cleared');
-    $('#project-nav + div').addClass('cleared');
-
-    // swap background
-    $('#bg').removeClass('cleared');
-    $('#bg2').addClass('cleared');
-    $('#bg3').addClass('cleared');
+    if($('#nav').hasClass('intro')){
+      triggerPage("proj");
+    } else {
+      triggerPage('intro');
+    }
   });
 
-  $('#project-nav').click(
+  $('.project-nav').click(
   function(){
-    selectProjects(['AR','graph','AP','krunkle','VR','bloop']);
-    clearIntroText();
+    triggerPage("proj");
+  });
 
-    $('#project-nav').addClass('active');
-    $('#art-nav').removeClass('active');
-    $('#about-nav').removeClass('active');
-
-    // swap content
-    $('#projects').addClass('active');
-    $('#art').removeClass('active');
-    $('#about').removeClass('active');
-
-    // swap subnav
-    $('#project-nav + div').removeClass('cleared');
-    $('#art-nav + div').addClass('cleared');
-
-    // swap background
-    $('#bg').addClass('cleared');
-    $('#bg2').removeClass('cleared');
-    $('#bg3').addClass('cleared');
+  $('#home').click(
+  function(){
+    triggerPage("proj");
   });
 
   // art
-  $('#art-nav').click(
+  $('.art-nav').click(
     function(){
-      clearIntroText();
-
-      $('#project-nav').removeClass('active');
-      $('#art-nav').addClass('active');
-      $('#about-nav').removeClass('active');
-
-      // swap content
-      $('#projects').removeClass('active');
-      $('#art').addClass('active');
-      $('#about').removeClass('active');
-
-      // swap subnav
-      $('#project-nav + div').addClass('cleared');
-      $('#art-nav + div').removeClass('cleared');
-
-      // swap background
-      $('#bg').addClass('cleared');
-      $('#bg2').addClass('cleared');
-      $('#bg3').removeClass('cleared');
+      triggerPage('art');
   });
   // about
-  $('#about-nav').click(
+  $('.about-nav').click(
     function(){
-      clearIntroText();
-
-      $('#project-nav').removeClass('active');
-      $('#art-nav').removeClass('active');
-      $('#about-nav').addClass('active');
-
-      // swap content
-      $('#projects').removeClass('active');
-      $('#art').removeClass('active');
-      $('#about').addClass('active');
-
-      // swap subnav
-      $('#project-nav + div').addClass('cleared');
-      $('#art-nav + div').addClass('cleared');
-
-      // swap background
-      $('#bg').addClass('cleared');
-      $('#bg2').addClass('cleared');
-      $('#bg3').addClass('cleared');
+      triggerPage('about');
   });
 
   // when a project category is clicked, select the relevant projects
-  $('#bigdata').click(
-  function(){
+  $('.bigdata').click(
+  function(e){
+    e.preventDefault();
+    resetFilters();
     selectProjects(['AR','graph','VR']);
-    $('#bigdata').addClass('active');
-    $('#projectNav').addClass('active');
-
+    $('.project-nav span').text('Big Data');
+    $('.project-nav span').addClass('active');
+    $('#projects a h6').addClass('filtered');
   });
-  $('#spatial').click(
-  function(){
+  $('.spatial').click(
+  function(e){
+    e.preventDefault();
     selectProjects(['AR','krunkle','VR','bloop']);
-    $('#spatial').addClass('active');
-    $('#projectNav').addClass('active');
-
+    $('.project-nav span').text('Spatial Experience');
+    $('.project-nav span').addClass('active');
+    $('#projects a h6').addClass('filtered');
+    $('.spatial').addClass('active');
+    $('#AR h6 span').addClass('active');
   });
-  $('#user').click(
-  function(){
+  $('.user').click(
+  function(e){
+    e.preventDefault();
     selectProjects(['AR','AP']);
-    $('#user').addClass('active');
-    $('#projectNav').addClass('active');
-
+    $('.project-nav span').text('User Behavior');
+    $('.project-nav span').addClass('active');
+    $('#projects a h6').addClass('filtered');
+    $('.user').addClass('active');
+    $('#AR h6 span').addClass('active');
   });
 
-  // initially select all projects
-  selectProjects([]);
+  // when a category is hovered, enlarge the relevant label
+  $('.bigdata').on('mouseenter mouseleave', debounce(function(e) {
+    if(e.type == 'mouseenter') {
+      $('.bigdata').addClass('focused');
+
+    }
+    if(e.type == 'mouseleave' || e.type == 'mouseout' ) {
+      $('.bigdata').removeClass('focused');
+    }
+  },500,true));
+  $('.spatial').on('mouseenter mouseleave', debounce(function(e) {
+    if(e.type == 'mouseenter') {
+      $('.spatial').addClass('focused');
+      $('#AR .spatial').removeClass('cleared');
+      $('#AR h6 span').removeClass('cleared');
+    }
+    if(e.type == 'mouseleave' || e.type == 'mouseout' ) {
+      $('.spatial').removeClass('focused');
+      $('#AR .spatial').addClass('cleared');
+      $('#AR h6 span').addClass('cleared');
+    }
+  },500,true));
+    $('.user').on('mouseenter mouseleave', debounce(function(e) {
+    if(e.type == 'mouseenter') {
+      $('.user').addClass('focused');
+      $('#AR .user').removeClass('cleared');
+      $('#AR h6 span').removeClass('cleared');
+    }
+    if(e.type == 'mouseleave' || e.type == 'mouseout' ) {
+      $('.user').removeClass('focused');
+      $('#AR .user').addClass('cleared');
+      $('#AR h6 span').addClass('cleared');
+    }
+
+  },500,true));
+
 });
 
+// David Walsh debounce, modified to trigger after timeout on second call
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+    console.log(args);
+  };
+};
+
+
+function triggerPage(page) {
+      $(window).scrollTop(0);
+      window.location.hash = page;
+
+      var proj = function(element) {
+        element.removeClass('active');
+      }
+      var art =  function(element) {
+        element.removeClass('active');
+      }
+      var about = function(element) {
+        element.removeClass('active')
+      }
+      var intro = function(element) {
+        element.removeClass('active')
+      }
+      switch(page) {
+          case "proj":
+              proj = function(element) {
+                element.addClass('active');
+              }
+              clearIntroText();
+              resetFilters();
+              selectProjects(['AR','graph','AP','krunkle','VR','bloop']);
+              $('body > div:nth-child(1)').addClass('projs');
+              break;
+          case "art":
+              art = function(element) {
+                element.addClass('active');
+              }
+              clearIntroText();
+              break;
+          case "about":
+              about = function(element) {
+                element.addClass('active');
+              }
+              clearIntroText();
+              break;
+          case "intro":
+              intro = function(element) {
+                element.addClass('active');
+              }
+              $('#intro-text').removeClass('cleared');
+              $('#home').removeClass('cleared');
+              $('#nav').addClass('intro');
+              break;
+      }
+
+      // highlight current nav element
+      proj($('.project-nav'));
+      art($('.art-nav'));
+      about($('.about-nav'));
+
+      // swap content
+      proj($('#projects'));
+      art($('#art-content'));
+      about($('#about-content'));
+
+      // swap background
+      intro($('#bg'));
+      proj($('#bg2'));
+
+      //trigger texture
+      intro($('#texture'));
+}
+
+function resetFilters() {
+  $('#projects a h6').removeClass('active');
+  $('#projects a h6').removeClass('filtered');
+  $('#AR h6 span').removeClass('active');
+  $('.project-nav span').removeClass('active');
+  $('.project-nav span').text('');
+}
+
+function hoverProjects(category, type) {
+  console.log(category);
+  if(type == 'mouseenter') {
+    category.addClass('focused');
+    // for(p in projs) {
+    //   $('#'+projs[p] + ' h6').addClass('focused');
+    // }
+  }
+  if(type == 'mouseleave') {
+    category.removeClass('focused');
+    // for(p in projs) {
+    //   $('#'+projs[p] + ' h6').removeClass('focused');
+    // }
+  }
+}
 function selectProjects(array) {
   if(initialized) {
     if(array.length != 0) {
-      clearInit();
       trigger(array);
     }
   }
   else {
-    clearIntroText();
     initialized = true;
     if(array.length == 0) {
-      window.setTimeout(function(){initProjects()}, [600]);
+      trigger(['AR','AP','graph','krunkle','VR','bloop']);
     }
     else {
-      $('#projectNav').addClass('active');
-      window.setTimeout(function(){trigger(array)}, [400]);
+      trigger(array);
     }
   }
-}
-
-function clearInit() {
-  $('#projectNav').addClass('active');
-  $('#sticky-nav a').removeClass('active');
 }
 
 function clearIntroText() {
   $('#intro-text').addClass('cleared');
   $('#home').addClass('cleared');
-  $('#bg').addClass('cleared');
-  $('#nav div h1').removeClass('intro');
-  $('#sticky-nav').removeClass('intro');
-}
-
-function initProjects() {
-  $('#projectNav').addClass('active');
-  $('#projectNav').addClass('active');
-  trigger(['AR','AP','graph','krunkle','VR','bloop']);
+  $('#nav').removeClass('intro');
+  $('#nav').removeClass('projs');
+  $('body > div:nth-child(1)').removeClass('projs');
 }
 
 // trigger and recursively focus stagger the focusing of selected projects
@@ -182,7 +269,6 @@ function trigger(t, projs) {
   projs = projs || ['bloop','VR','krunkle','AP','graph','AR'];
   if(projs){
     for(p in projs) {
-      console.log(p);
       if(!t.includes(projs[p])){
         $('#'+projs[p]).removeClass('focused');
         projs.splice(p, 1);
@@ -204,8 +290,9 @@ function trigger(t, projs) {
 function recursivelyFocus(t){
 
   if(t.length > 0) {
-    console.log(t);
-    $('#'+ t.pop()).addClass('focused');
+    proj = t.pop();
+    $('#'+ proj).addClass('focused');
+    $('#'+proj + ' h6').removeClass('focused');
     setTimeout(function(){
       recursivelyFocus(t);
     }, 50);
@@ -218,32 +305,24 @@ window.addEventListener("hashchange", function () {
 });
 
 // calculates which menu item is active on scroll (for the art section)
-function adjustMenuItems() {
-
-  var position = $(this).scrollTop();
+function adjustMenuItems(position) {
 
   $('.section').each(function() {
       var target = $(this).offset().top;
       var id = $(this).attr('id');
 
       if (position + 230 >= target) {
-          $('#art-nav + div a').removeClass('active');
-          $('#art-nav + div a[href="#' + id + '"]').addClass('active');
+          $('.art-nav + div a').removeClass('active');
+          $('.art-nav + div a[href="#' + id + '"]').addClass('active');
 
           if(position + 530 >= $('#electronic').offset().top) {
-            $('#art-nav + div a').removeClass('active');
-            $('#art-nav + div a[href="#electronic"]').addClass('active');
+            $('.art-nav + div a').removeClass('active');
+            $('.art-nav + div a[href="#electronic"]').addClass('active');
           }
       }
   });
 }
 
-  // TODO automatically scroll to top on page change, test scroll behavior of art
-
   // TODO dynamically load content (lazyload pages)
-
-  // TODO split css files into seperate files for font, sticky-nav, and other
-
-  // TODO highlight projects when a subnav is selected
 
 
