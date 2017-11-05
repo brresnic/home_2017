@@ -36,10 +36,10 @@ body>div:nth-child(1) {
   margin: 0 auto;
 }
 
-body>div:nth-child(1).projs {
+/*body>div:nth-child(1).projs {
   position: relative;
   left: -7px;
-}
+}*/
 
 h1 {
   font-family: 'brandon-bold';
@@ -243,7 +243,7 @@ hr:before {
   opacity: .85;
   position: relative;
   top: 60px;
-  left: -20px;
+  left: -10px;
   margin: 0 auto;
 }
 
@@ -365,6 +365,7 @@ hr:before {
   margin: 25px auto;
 }
 
+
 @media only screen and (max-width : 1250px) {
 
   #intro-text {
@@ -387,15 +388,6 @@ hr:before {
     font-size: 16px;
     padding: 0 16px 0 0;
   }
-
-  #sticky-nav.art-nav a.active {
-    font-family: 'brandon-lightt';
-    text-decoration: none;
-  }
-  #sticky-nav.art-nav a.active:hover {
-    text-decoration: underline;
-  }
-
 }
 
 @media only screen and (max-width : 810px) {
@@ -408,70 +400,9 @@ hr:before {
     display: none;
   }
 
-  #projects {
-    justify-content: center;
+  #home {
+    top: 110px;
   }
-
-  #projects a img{
-    max-width: 140px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #projects a{
-    width: 270px;
-  }
-
-  #art {
-    justify-content: center;
-  }
-  #art div {
-    padding: 10px;
-  }
-
-  #art div img {
-    max-width: 250px;
-  }
-
-  #art .video {
-    flex-basis: 100%;
-    overflow: hidden;
-    margin-top: 10px;
-    max-width: 440px;
-  }
-
-  #art .full-width-video {
-    max-width: 440px;
-    height: 510px;
-  }
-
-  #art .video div {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-  }
-
-  #art .video div iframe {
-      position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-
-  #art div#alice img {
-    display: none;
-  }
-
-  #art div#alice iframe {
-    display: inline;
-  }
-  #art .full-width-video {
-    height: 400px;
-  }
-
-
 }
 
 @media only screen and (max-width : 740px) {
@@ -481,9 +412,6 @@ hr:before {
 }
 
 @media only screen and (max-width : 685px) {
-  h1 {
-    font-size: 2.3em;
-  }
 
   a {
     font-size: 1.3em;
@@ -501,47 +429,6 @@ hr:before {
     text-align: left;
   }
 
-
-
-  #about div {
-    margin: 35px 0px;
-  }
-
-  #about p {
-    clear: both;
-  }
-
-  #about div p {
-    clear: none;
-  }
-
-  #about img {
-    display: none;
-  }
-
-  #about img:nth-child(10) {
-    float: right;
-    margin: 35px 30px 20px 20px;
-    max-width: 130px;
-    display: inline;
-  }
-
-  #about img.mobile {
-    text-align: center;
-    float: none;
-    margin: 0 auto;
-    display: block;
-    max-width: 350px;
-    padding: 40px 20px;
-  }
-
-
-}
-
-@media only screen and (max-width : 520px) {
-  #about div p.mobile-clear {
-    clear: both;
-  }
 }
 
 .multiSoundDetails__mainContent {
@@ -636,22 +523,28 @@ hr:before {
   position: absolute;
   top: -200px;
   left: -250%;
-  width: 600%;
+  width: 600vw;
   min-height: 1250px;
   height: 100%;
   height: 100vh;
 }
 
+@media only screen and (min-width : 1680px) {
+  #texture svg {
+    height: 180vh;
+  }
+}
+
 .SVGStyle {
   stroke-width: 4px;
   stroke-dasharray: 5, 30;
-  animation: dash 50s ease-out infinite alternate;
+  animation: dash 50s linear infinite alternate;
   animation-fill-mode: forwards;
 }
 
 @keyframes dash {
   to {
-    stroke-dashoffset: 800;
+    stroke-dashoffset: 950;
   }
 }
 

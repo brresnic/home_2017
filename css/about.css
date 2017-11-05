@@ -62,6 +62,55 @@
   font-family: 'plex-bold';
 }
 
+@media only screen and (max-width : 685px) {
+
+  #about-content {
+    padding: 60px 10px 10px 10px;
+  }
+
+  #about-content div {
+    margin: 35px 0px;
+  }
+
+  #about-content p {
+    clear: both;
+  }
+
+  #about-content div p {
+    clear: none;
+  }
+
+  #about-content img {
+    display: none;
+  }
+
+  #about-content img:nth-child(11) {
+    float: right;
+    margin: 35px 30px 20px 20px;
+    max-width: 130px;
+    display: inline;
+  }
+
+  #about-content img.mobile {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    max-width: 350px;
+    padding: 40px 20px;
+  }
+  #about-content div p {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width : 520px) {
+  #about-content div p.mobile-clear {
+    clear: both;
+  }
+}
+
 @-webkit-keyframes AfadeInFromNone {
     0% {
         display: none;

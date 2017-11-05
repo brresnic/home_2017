@@ -142,3 +142,64 @@
 #art-content .fullsize-text {
   padding-top: 10px;
 }
+
+
+
+@media only screen and (max-width : 810px) {
+  #art-content {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  #art-content div {
+    padding: 10px;
+  }
+
+  #art-content img {
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #art-content .video {
+    flex-basis: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    max-width: 440px;
+  }
+
+  #art-content div:nth-child(4) {
+    display:none;
+  }
+
+  #art-content .full-width-video {
+    max-width: 440px;
+    height: 510px;
+  }
+
+  #art-content .video div {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+  }
+
+  #art-content .video div iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  #art-content div#alice img {
+    display: none;
+  }
+
+  #art-content div#alice iframe {
+    display: inline;
+  }
+  #art-content .full-width-video {
+    height: 400px;
+  }
+}

@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 380px;
+  margin: 0 auto;
 }
 
 #projects a {
@@ -27,6 +28,7 @@
   -webkit-transition: all .45s;
   transition: all .45s;
   pointer-events: none;
+  margin: 0 auto;
 }
 
 #projects a.focused {
@@ -116,7 +118,7 @@
 #projects #AR h5{
   position: relative;
   bottom: 38px;
-  right: 35px;
+  right: 40px;
 }
 
 #projects #AR h6{
@@ -124,45 +126,15 @@
   bottom: 38px;
   display: inline-block;
   white-space: nowrap;
-  left: 15px;
-}
-
-#projects #AR h6 span{
-  width: 20px;
-  height: 14px;
-  overflow: hidden;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  opacity: 1;
-  -webkit-transition: all .45s;
-  transition: all .45s;
-}
-
-#projects #AR h6 span.cleared {
-  width: 0px;
-  opacity: 0;
-  height: 0px;
-}
-
-#projects #AR h6.cleared {
-/*  opacity: 0;
-  pointer-events: none;*/
-}
-
-#projects #AR h6 span.active {
-  width: 20px;
-  opacity: 1;
-  height: 14px;
+  left: 10px;
 }
 
 #projects #AR h6.active {
   opacity: 1;
 }
 
-#projects #AR h6:nth-child(5) {
-/*  position: relative;
-  top: -55px;*/
+#projects #AR h6.comma {
+  left: 6fpx;
 }
 
 
@@ -192,4 +164,57 @@
 
 #projects div a:nth-child(4) img{
   max-width: 105px;
+}
+
+@media only screen and (max-width : 1250px) {
+  #projects #AR {
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width : 810px) {
+  #projects {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #projects div {
+    flex-direction: column;
+    padding-top: 108px;
+  }
+
+  #projects a h6 {
+    pointer-events: none;
+  }
+
+  #projects.active #AR {
+    max-width: 100%;
+    left: 0px;
+  }
+
+  #projects.active #AR img{
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+    right: 0px;
+  }
+
+  #projects.active #AR h5 {
+    bottom: 0;
+    right: 0;
+  }
+  #projects.active #AR h6 {
+    display: none;
+  }
+
+  #projects.active #AR h6.bigdata {
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  #projects.active div {
+    max-width: 100%;
+  }
 }

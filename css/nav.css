@@ -165,3 +165,19 @@
   font-family: 'brandon-medium';
   text-decoration: none;
 }
+
+
+@media only screen and (max-width : 810px) {
+  #nav {
+    margin-bottom: 0px;
+  }
+
+  #nav.intro h1 {
+    top: 10px;
+  }
+
+  #intro-text p:nth-child(1) {
+    font-size: 28px;
+    top: 160px;
+  }
+}
