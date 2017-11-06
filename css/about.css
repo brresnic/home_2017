@@ -62,11 +62,15 @@
   font-family: 'plex-bold';
 }
 
-@media only screen and (max-width : 685px) {
 
+@media only screen and (max-width : 810px) {
   #about-content {
     padding: 60px 10px 10px 10px;
   }
+
+}
+
+@media only screen and (max-width : 685px) {
 
   #about-content div {
     margin: 35px 0px;

@@ -9,6 +9,14 @@
   margin-bottom: 110px;
 }
 
+#nav.no-transition h1 {
+  transition: none;
+}
+
+#nav.no-transition a {
+  transition: none;
+}
+
 #nav.intro h1 {
   font-size: 2.1em; /*brandon-bold fontface*/
   top: 85px;

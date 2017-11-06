@@ -36,11 +36,6 @@ body>div:nth-child(1) {
   margin: 0 auto;
 }
 
-/*body>div:nth-child(1).projs {
-  position: relative;
-  left: -7px;
-}*/
-
 h1 {
   font-family: 'brandon-bold';
   letter-spacing: 5px;/*brandon-bold fontface*/
@@ -156,10 +151,7 @@ hr:before {
   height: 100%;
   z-index: -1;
   background: white;
-/*  background: -webkit-linear-gradient(#ffffff 0%, #ffffff 35%, #f2e0e4 80%, #E9D3D3 100%);
-  background: -o-linear-gradient(#ffffff 0%, #ffffff 35%,#f2e0e4 80%, #E9D3D3 100%);
-  background: linear-gradient(#ffffff 0%, #ffffff 35%, #f2e0e4 80%, #E9D3D3 100%); /*#e0c6c0*/*/
-  background: -webkit-radial-gradient(#ffffff 0%, #ffffff 55%, #FDFBFB 75%, #f2e0e4 100%);
+ background: -webkit-radial-gradient(#ffffff 0%, #ffffff 55%, #FDFBFB 75%, #f2e0e4 100%);
   background: -o-radial-gradient(#ffffff 0%, #ffffff 55%,#FDFBFB 75%, #f2e0e4 100%);
   background: radial-gradient(#ffffff 0%, #ffffff 55%, #FDFBFB 75%, #f2e0e4 100%); /*#e0c6c0*/
   -webkit-transition: opacity 1s;
@@ -174,7 +166,6 @@ hr:before {
   width: 100%;
   height: 100%;
   z-index: -2;
-
   background: -moz-linear-gradient(315deg, #FFFFFF 0%, #FFFFFF 58%, #FFEDB5 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FFEDB5), color-stop(42%, #FFFFFF), color-stop(100%, #FFFFFF)); /* safari4+,chrome */
   background: -webkit-linear-gradient(315deg, #FFFFFF 0%, #FFFFFF 58%, #FFEDB5 100%); /* safari5.1+,chrome10+ */
@@ -194,14 +185,11 @@ hr:before {
   left: 0px;
   z-index: -1;
   background: white;
-/*  background: -webkit-linear-gradient(#ffffff 0%, #f2e0e4 53%, #9a8c98 100%);
-  background: -o-linear-gradient(#ffffff 0%, #f2e0e4 53%, #9a8c98 100%);
-  background: linear-gradient(#ffffff 0%, #f2e0e4 53%, #9a8c98 100%);*/
   background: -webkit-radial-gradient(#ffffff 0%, #f2e0e4 63%, #BAABB4 100%);
   background: -o-radial-gradient(#ffffff 0%, #f2e0e4 63%, #BAABB4 100%);
   background: radial-gradient(#ffffff 0%, #f2e0e4 63%, #BAABB4 100%);
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 2.2s;
+  transition: opacity 2.2s;
   opacity: 0;
 }
 
@@ -363,6 +351,11 @@ hr:before {
 .project iframe {
   display: block;
   margin: 25px auto;
+}
+
+.projs {
+  position: relative;
+  left: -7px;
 }
 
 

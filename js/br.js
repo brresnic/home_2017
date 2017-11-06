@@ -5,8 +5,11 @@ $( document ).ready(function() {
   if(window.location.hash) {
     var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
     triggerPage(hash);
+    if(hash != 'intro') {
+      $('#nav').removeClass('no-transition');
+    }
   } else {
-    triggerPage('proj');
+    triggerPage('intro');
   }
 
   // register a function that is triggered on scroll
@@ -195,6 +198,7 @@ function triggerPage(page) {
               $('#intro-text').removeClass('cleared');
               $('#home').removeClass('cleared');
               $('#nav').addClass('intro');
+              setTimeout(function(){$('#nav').removeClass('no-transition');}, 100);
               break;
       }
 
@@ -212,8 +216,12 @@ function triggerPage(page) {
       intro($('#bg'));
       proj($('#bg2'));
 
-      //trigger texture
+      // trigger texture
       intro($('#texture'));
+
+
+
+      //$('#nav').removeClass('no-transition');
 }
 
 function resetFilters() {
