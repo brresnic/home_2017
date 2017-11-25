@@ -174,8 +174,90 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width : 1180px) {
+
+  #sticky-nav {
+    left: calc(50% - 520px);
+  }
+}
+
+@media only screen and (max-width : 1070px) {
+  #sticky-nav {
+    position: relative;
+    top: -120px;
+    left: 0px;
+    opacity: 1;
+    pointer-events: auto;
+    width: 100%;
+  }
+
+  #sticky-nav div.cleared {
+
+  }
+
+  #sticky-nav .project-nav {
+    display: none;
+  }
+
+  #sticky-nav .art-nav {
+    display: none;
+  }
+
+  #sticky-nav .art-nav.active + div {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    height: 30px;
+    width: auto;
+
+    justify-content: center;
+  }
+
+  #sticky-nav .about-nav {
+    display: none;
+  }
+  #sticky-nav a {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    padding: 12px 10px 0px 2px;
+  }
+
+  #sticky-nav div a.active {
+    padding-left: 0px;
+    font-family: 'brandon-light';
+  }
+
+  #sticky-nav div a:hover {
+    padding-left: 0px;
+    font-family: 'brandon-medium';
+  }
+
+}
 
 @media only screen and (max-width : 810px) {
+
+  #sticky-nav div a.active {
+    padding-left: 0px;
+    font-family: "brandon-light";
+  }
+
+  #sticky-nav {
+    top: -10px;
+  }
+  #sticky-nav .art-nav.active + div {
+    flex-direction: column;
+    margin: 0 auto;
+    height: 165px;
+  }
+
+  #sticky-nav a {
+    width: 100px;
+    align-self: center;
+    position: relative;
+    left: 75px;
+  }
+
   #nav {
     margin-bottom: 0px;
   }

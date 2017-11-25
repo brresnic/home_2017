@@ -9,13 +9,13 @@
     <title>Benjamin Resnick Art</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/br.js"></script>
-    <link href="css/global.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
-    <link href="css/art.css" rel="stylesheet">
-    <link href="css/projects.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
+    <script src="assets/js/br.js"></script>
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link href="assets/css/about.css" rel="stylesheet">
+    <link href="assets/css/art.css" rel="stylesheet">
+    <link href="assets/css/projects.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link href="assets/css/nav.css" rel="stylesheet">
 
   </head>
 
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div id='intro-text' class='cleared'>
-        <p> Hi! I'm a creative technologist.<!-- <br> I <a>research</a> thoroughly, <a>design</a> playfully, <br> and <a>code</a> data-driven experiences.</p> -->
+        <p> Hi! I'm a data-driven designer and developer.<!--I'm a creative technologist. <br> I <a>research</a> thoroughly, <a>design</a> playfully, <br> and <a>code</a> data-driven experiences.</p> -->
       </div>
       <a id="home" class='all cleared'>
         <img src = "assets/ico/intro.png">
@@ -41,7 +41,7 @@
         <a class='art-nav'>Art</a>
         <div class='cleared'>
           <a class="active"  href="#novellas">Novellas</a>
-          <a href="#installations">Installation</a>
+          <a href="#installations">Installations</a>
           <a href="#singer">Singer/Songwriter</a>
           <a href="#furniture">Furniture</a>
           <a href="#musicvideo">Music Videos</a>
@@ -77,7 +77,7 @@
             <h5> Krunkle House </h5>
             <h6 class='spatial'> Spatial Experience </h6>
           </a>
- <!--           <a id="VR">
+          <!-- <a id="VR">
             <img src = "assets/ico/VR.jpg">
             <h5> VR Music Visualization</h5>
             <h6> UX Design + Development</h6>
@@ -91,21 +91,28 @@
       </div>
       <div id="art-content">
         <h4 id='novellas' class='section'> Novellas </h4>
-        <a href="bell/pepper.html">
+        <a href="art/bell/pepper.html">
           <img src = "assets/ico/bell2.jpg">
           <h5> The Bell Pepper </h5>
           <h6> Novella </h6>
         </a>
-        <a href="YellowLake/yellowlake.html">
+        <a href="art/YellowLake/yellowlake.html">
           <img src = "assets/ico/yellow.jpg">
           <h5> The Train From Yellow Lake </h5>
           <h6> Novella </h6>
         </a>
         <div> <img src = "assets/ico/arrow.png"> </div>
-        <h4 id='installations' class='section'> Installation </h4>
-        <div class='video full-width'>
+        <h4 id='installations' class='section'> Installations </h4>
+        <div>
+          <a class='three-column' href='art/nilio.html'>
+            <img src = "assets/ico/inst.jpg">
+            <h5> Nileo </h5>
+            <h6> Installation </h6>
+          </a>
+        </div>
+        <div class='video'>
           <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wK8DUbZSst0?rel=0&amp;start=123&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/wK8DUbZSst0?rel=0&amp;start=123&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
           <h5> The Last Stand </h5>
           <h6> Installation </h6>
@@ -114,20 +121,20 @@
         <div>
           <div class='audio-container'>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/theescape.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>The Escape</p>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/busstation.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>Bus Station</p>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/true.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>This is True</p>
           </div>
           <h5> Composed and Performed </h5>
           <h6> Singer/Songwriter </h6>
@@ -140,41 +147,37 @@
           <h6> Singer/Songwriter </h6>
         </div>
         <h4 id='furniture' class='section'> Furniture </h4>
-        <div>
-          <img src = "assets/ico/catan-1.jpg">
-          <h5> Catan Shelf and Table </h5>
-          <h6> Furniture </h6>
-        </div>
-        <div>
+        <a href='art/cartop-coffee.html'>
           <img src = "assets/ico/cartop.jpg">
           <h5> Cartop Coffee Table </h5>
           <h6> Furniture </h6>
-        </div>
+        </a>
+        <a href='art/catan-table.html'>
+          <img src = "assets/ico/catan-1.jpg">
+          <h5> Catan Shelf and Table </h5>
+          <h6> Furniture </h6>
+        </a>
         <h4 id='musicvideo' class='section'> Music Videos </h4>
-        <div class = 'video'>
+        <div class = 'video full-width'>
           <div>
             <iframe width="460" height="258" src="https://www.youtube.com/embed/wAbbBE-qv2A?rel=0&amp;start=44&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
-          <h5 class='mobile-text'> Lemon Groove </h5>
-          <h6 class='mobile-text'> Rap </h6>
+          <h5> Lemon Groove (Rap) </h5>
+          <h6> Music Video </h6>
         </div>
-        <div id='alice' class='video'>
-          <img src = "assets/ico/alice.jpg">
-          <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NJ4Eb2-Cegs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <h5 class='mobile-text'> Alice in Wonderland </h5>
-          <h6 class='mobile-text'> Jazz </h6>
-
-        </div>
-        <div class = 'full-width-video'>
+        <div class = 'video full-width'>
           <div>
             <iframe width="460" height="258" src="https://www.youtube.com/embed/0rv4ae1uvGs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
-          <h5 class='mobile-text'> Inside Outside </h5>
-          <h6 class='mobile-text'> Roots Reggae </h6>
-          <h5 class='fullsize-text'> Rap, Jazz, and Roots Reggae </h5>
-          <h6 class='fullsize-text'> Music Videos </h6>
+          <h5> Inside Outside (Roots Reggae) </h5>
+          <h6> Music Videos </h6>
+        </div>
+        <div class='video full-width'>
+          <div>
+            <iframe width="460" height="258" src="https://www.youtube.com/embed/NJ4Eb2-Cegs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h5> Alice in Wonderland (Jazz)</h5>
+          <h6> Music Video </h6>
         </div>
         <h4 id='electronic' class='section'> Electric Ambient </h4>
         <div class='video'>
@@ -187,20 +190,20 @@
         <div>
           <div class='audio-container'>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/kim.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>Kim</p>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/zimbabwe-walls.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>Zimbabwe Walls (remix)</p>
             <audio controls>
-              <source src="e.mp3" type="audio/mpeg">
+              <source src="assets/songs/duckchase.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p>Everything I Knew</p>
+            <p>Duck Chase</p>
 
           </div>
           <h5> Synthesized Audio </h5>
@@ -208,13 +211,14 @@
 
         </div>
         <h4> Collaborators </h4>
-        <p><a href='http://rucbon.com/'>Brendon Hall</a> painted the amazing illustrations for both my novellas, and provided guitar on The Escape. <a href='https://www.facebook.com/HanzoloMusic/'>Karl Lowenguth</a> was band leader and composer for Red Planet Man and Inside, Outside. He provided vocals on Lemon Grove. Nick Summers showed up and played trumpet on three tracks. Adam Green and Pierce Shipp worked with me to come up with The Last Stand. I consider myself blessed to have such close friends with the talent and motivation to create interesting things!</p>
+        <h2> Collaborators </h2>
+        <p><a href='http://rucbon.com/'>Brendon Hall</a> painted the amazing illustrations for both my novellas, and provided guitar on The Escape. <a href='https://www.facebook.com/HanzoloMusic/'>Karl Lowenguth</a> was band leader and composer for Red Planet Man and Inside, Outside. He provided vocals on Lemon Groove and Red Planet Man. Nick Summers played trumpet on three tracks. Adam Green and Pierce Shipp worked with me to come up with The Last Stand. Adam also played bagpipes on "Kim".</p>
       </div>
 
       <div id="about-content">
           <img src = "assets/Benportfoliopic.jpg">
-        <p>Hi! My name is Ben. Here's my <a>resume</a> and <a>LinkedIn</a>. </p>
-          <p> I'm a creative technologist.  I look for projects that combine imaginative thinking and real-world impact. </p>
+        <p>Hi! My name is Ben. Here's my <a href='assets/BenResnickResume.pdf'>resume</a> and <a href='https://www.linkedin.com/in/benjamin-resnick-7b602b7b/'>LinkedIn</a>. </p>
+          <p> I'm a data-driven designer and developer <!-- creative technologist -->.  I look for projects that combine imaginative thinking and real-world impact. </p>
           <p>Most of my work experience has been on software product teams. But I’ve also designed and built a small house, crafted business proposals, and delivered user experiences that blend physical and digital spaces (sometimes leveraging AR and VR). The common thread connecting my pursuits has been collaborative creativity.</p>
           <p>I’m a jack of many trades. On product teams, I often fall into an underserved role that helps to accelerate outcomes. I’m comfortable performing <span> user research</span>, <span> full-stack development</span>, and <span> data science</span>. I have some pretty strong opinions on quantitative user research, a topic that draws on (and has helped me to develop) all three of those skill sets. I enjoy writing copy, tutorials, and product specifications. Usually my team’s needs, and my deliverables, evolve throughout the product lifecycle (generative research &#8594 iterative prototyping &#8594 continuous deliverly). </p>
 <!--            <p>
@@ -244,8 +248,8 @@
             <p>Still knows how to fly</p>
             <br>
             <br>
-            <p class='desc'> Excerpt from Ch. 3 of <a>The Bell Pepper </a> </p>
-            <p class='desc'> Samantha is a metaphor for my interest in creative yet well grounded projects! </p>
+            <p class='desc'> Excerpt from Ch. 3 of <a href='art/bell/pepper.html'>The Bell Pepper </a> </p>
+            <!--<p class='desc'> Samantha is a metaphor for my interest in creative yet well grounded projects! </p>-->
           </div>
       </div>
     </div>

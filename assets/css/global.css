@@ -110,7 +110,7 @@ a:hover {
 }
 
 p a:hover {
-  font-family: 'plex--medium';
+  font-family: 'plex-medium';
 }
 
 img {
@@ -118,7 +118,6 @@ img {
 }
 
 iframe {
-  border:3px solid #000;
   border-radius: 3px !important;
 }
 
@@ -333,6 +332,7 @@ hr:before {
 .project img {
   margin: 25px 0 0 0;
   display: block;
+  width: 100%;
 
 }
 
@@ -340,6 +340,21 @@ hr:before {
   text-align: center;
   display: block;
   margin: 10px 0 20px 0;
+}
+
+.project .side-by-side {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px
+}
+
+.project .side-by-side img{
+  max-width: 320px;
+  max-height: 400px;
+  display: block;
+  height: auto;
 }
 
 .project iframe~i {
@@ -358,31 +373,6 @@ hr:before {
   left: -7px;
 }
 
-
-@media only screen and (max-width : 1250px) {
-
-  #intro-text {
-    position: fixed; /* or absolute */
-    width: 450px;
-    top: 160px;
-    left: 20%;
-    left: calc(50% - 225px);
-  }
-
-  #sticky-nav {
-    position: relative;
-    top: -60px;
-    left: 0px;
-  }
-
-  #sticky-nav a {
-    display: inline-block;
-    text-align: left;
-    font-size: 16px;
-    padding: 0 16px 0 0;
-  }
-}
-
 @media only screen and (max-width : 810px) {
 
   .mobile-text {
@@ -396,11 +386,14 @@ hr:before {
   #home {
     top: 110px;
   }
-}
 
-@media only screen and (max-width : 740px) {
-  #sticky-nav {
-    display: none;
+  h2 {
+    margin-top: 60px;
+  }
+
+  .project .side-by-side {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
