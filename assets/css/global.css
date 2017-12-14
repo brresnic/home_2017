@@ -330,10 +330,9 @@ hr:before {
 }
 
 .project img {
-  margin: 25px 0 0 0;
+  margin: 35px 0 35px 0;
   display: block;
   width: 100%;
-
 }
 
 .project img~i {
@@ -347,7 +346,6 @@ hr:before {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 35px
 }
 
 .project .side-by-side img{
@@ -355,6 +353,11 @@ hr:before {
   max-height: 400px;
   display: block;
   height: auto;
+}
+
+.project .side-by-side.square img{
+  max-width: 320px;
+  max-height: 320px;
 }
 
 .project iframe~i {
