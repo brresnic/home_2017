@@ -6,7 +6,13 @@
   transition: all .7s ease;
   position: relative;
   left: 0px;
-  margin-bottom: 110px;
+  margin-bottom: 112px;
+}
+
+#nav h1 {
+  flex-basis: 30%;
+  left: -10px;
+  padding-right: 20px;
 }
 
 #nav.no-transition h1 {
@@ -17,16 +23,24 @@
   transition: none;
 }
 
+#nav h1 {
+/*  text-align: center;
+  white-space: nowrap;
+  width: 0px;*/
+}
+
 #nav.intro h1 {
   font-size: 2.1em; /*brandon-bold fontface*/
   top: 85px;
+  left: 110px;
   letter-spacing: 5px;
+  flex-basis: 100%;
+  padding: 0px;
 }
 
 #nav div {
-  padding: 0px 0 10px 0;
+  padding: 0px 0 4px 0;
   display: flex;
-  justify-content: center;
   position: relative;
   left: 0px;
   -webkit-transition: all .4s ease;
@@ -59,19 +73,21 @@
 }
 
 #nav a {
-  padding: 5px 18px 0 18px;
+  padding: 4px 22px 0 18px;
   height: 30px;
   position: relative;
- -webkit-transition: all .8s;
-  transition: all .8s;
-  top: 0px;
+ -webkit-transition: all .4s;
+  transition: all .4s;
+  top: 2px;
+  font-size: 20px;
+  flex-basis: auto;
 }
 
 #nav.intro a {
   opacity: 0;
-  top: 70px;
   font-size: 16px;
   pointer-events: none;
+  flex-basis: 0px;
 }
 
 #sticky-nav {
@@ -92,7 +108,7 @@
 
 #sticky-nav a {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   padding: 3px;
   text-align: left;
 }
@@ -123,7 +139,7 @@
 }
 
 #sticky-nav div a {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'brandon-light';
   padding-left: 3px;
   -webkit-transition: all .2s ease;

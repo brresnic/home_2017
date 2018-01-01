@@ -131,6 +131,7 @@ hr {
   margin-top: 65px;
   opacity: .25;
 }
+
 hr:before {
   display: block;
   content: "";
@@ -229,13 +230,99 @@ hr:before {
   transition: opacity .3s;
   opacity: .85;
   position: relative;
-  top: 60px;
-  left: -10px;
+  top: 150px;
+  left: 10px;
   margin: 0 auto;
 }
 
 #home img {
   width: 150px;
+  position: relative;
+  left: -26px;
+}
+
+#texture img:nth-child(1) {
+/*  position: relative;
+  top: -265px;
+  opacity: 1;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(27deg);*/
+
+
+/*  width: 200vw;
+  position: fixed;
+  bottom: -120vh;
+  right: -70vw;
+  opacity: .3;
+    -webkit-transform: scaleX(-1) rotate(-90deg);
+    transform: scaleX(-1) rotate(-90deg);*/
+
+/*  width: 140vw;
+  position: fixed;
+  bottom: -80vh;
+  right: -10vw;
+  opacity: .2;
+  width: 50vw;
+  bottom: 0vw;
+    -webkit-transform: scaleX(-1) rotate(-90deg);
+    transform: scaleX(-1) rotate(-90deg);
+*/
+  width: 100vw;
+  position: fixed;
+  top: -80vw;
+  right: -65vw;
+  opacity: .35;
+  -webkit-transform: scaleX(-1) rotate(-90deg);
+  transform: scaleX(-1) rotate(-90deg);
+  z-index: -1;
+
+}
+
+#texture img:nth-child(2) {
+/*      width: 800px;
+  opacity: 1;
+  position: fixed;
+  bottom: -285px;
+  right: -350px;
+  opacity: .3;
+    -webkit-transform: scaleX(-1) rotate(-90deg);
+    transform: scaleX(-1) rotate(-90deg);
+*/
+  width: 100vw;
+  position: fixed;
+  bottom: -60vw;
+  left: -73vw;
+  opacity: .35;
+  -webkit-transform: scaleX(-1) rotate(90deg);
+  transform: scaleX(-1) rotate(90deg);
+  z-index: -1;
+}
+
+/*#home img:nth-child(5) {
+  width: 800px;
+  opacity: 1;
+  position: fixed;
+  bottom: -285px;
+  left: -350px;
+  opacity: .3;
+    -webkit-transform: scaleX(-1) rotate(90deg);
+    transform: scaleX(-1) rotate(90deg);
+}
+
+#home img:nth-child(6) {
+      width: 800px;
+  opacity: 1;
+  position: fixed;
+  bottom: -285px;
+  right: -350px;
+  opacity: .3;
+    -webkit-transform: scaleX(-1) rotate(-90deg);
+    transform: scaleX(-1) rotate(-90deg);
+}*/
+
+
+#home {
+  cursor: pointer;
 }
 
 #home.cleared img {
@@ -249,7 +336,7 @@ hr:before {
 #home img:nth-child(2) {
   position: absolute;
   top: 0px;
-  left: -15px;
+  left: -35px;
   opacity: .8;
   -webkit-transition: all .15s; /* brandon-boldic-bezier(0.445, 0.05, 0.55, 0.95);*/
   transition: all .15s;
@@ -262,7 +349,7 @@ hr:before {
 #home:hover img:nth-child(2) {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: -10px;
   opacity: 1;
 }
 
@@ -373,7 +460,7 @@ hr:before {
 
 .projs {
   position: relative;
-  left: -7px;
+/*  left: -7px;*/
 }
 
 @media only screen and (max-width : 810px) {
