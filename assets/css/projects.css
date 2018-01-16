@@ -115,8 +115,14 @@
   max-height: 225px;*/
 }
 
+#projects #AR div {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 #projects #AR div div {
   justify-content: flex-start;
+  flex-direction: row;
   margin: 0;
   padding-left: 46px;
   width: 450px;
@@ -130,14 +136,16 @@
 #projects #AR h5{
   font-size: 24px;
   padding-left: 46px;
+  height: 26px;
+  text-align: left;
 /*  position: relative;
   bottom: 38px;
   right: 40px;*/
 }
 
 #projects #AR h6{
-  position: relative;
-  top: -38px;
+/*  position: relative;
+  top: -38px;*/
 /*  display: inline-block;
   white-space: nowrap;
   left: 10px;*/
@@ -198,24 +206,38 @@
   #projects {
     justify-content: center;
     flex-direction: column;
+    padding-top: 60px;
   }
 
   #projects div {
     flex-direction: column;
-    padding-top: 108px;
   }
 
   #projects a h6 {
     pointer-events: none;
   }
 
-  #projects.active #AR {
+  #projects div a h6 {
+    text-align: center;
+  }
+
+  #projects div a h5 {
+    text-align: center;
+  }
+
+  #projects div a img {
+    margin: 0 auto;
+  }
+
+  #projects #AR {
     max-width: 100%;
     left: 0px;
+    display: block;
   }
 
   #projects.active #AR img{
-    max-width: 180px;
+    max-width: 130px;
+    max-height: 120px;
     display: block;
     margin: 0 auto;
     right: 0px;
@@ -224,6 +246,10 @@
   #projects.active #AR h5 {
     bottom: 0;
     right: 0;
+    font-size: 18px;
+    padding-left: 0px;
+    text-align: center;
+    height: 18px;
   }
   #projects.active #AR h6 {
     display: none;
@@ -234,9 +260,20 @@
     margin: 0 auto;
     left: 0;
     bottom: 0;
+    top: 0;
+  }
+
+  #projects.active #AR div div {
+    max-width: 100%;
+    padding-left: 0px;
+    margin: 0 auto;
   }
 
   #projects.active div {
     max-width: 100%;
+  }
+
+  #projects div a:nth-child(3) img {
+    left: -20px;
   }
 }

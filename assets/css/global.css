@@ -474,7 +474,16 @@ hr:before {
   }
 
   #home {
-    top: 110px;
+    top: 155px;
+  }
+
+  #home img {
+    width: 120px;
+    left: -10px;
+  }
+
+  #home img:nth-child(2) {
+    left: -22px;
   }
 
   h2 {
@@ -505,6 +514,9 @@ hr:before {
     text-align: left;
   }
 
+  #home {
+    top: 195px;
+  }
 }
 
 .multiSoundDetails__mainContent {
