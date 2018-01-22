@@ -119,6 +119,7 @@
 #projects #AR div {
   justify-content: flex-start;
   flex-direction: column;
+  max-width: 365px;
 }
 
 #projects #AR div div {
