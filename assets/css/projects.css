@@ -41,7 +41,7 @@
   max-width: 120px;
   display: block;
   margin: 0 auto;
-  opacity: .62;
+  opacity: .8;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -61,11 +61,12 @@
 #projects a h6{
   -webkit-transition: all .45s;
   transition: all .45s;
+  pointer-events: none;
 }
 
 #projects a h6.focused {
-  font-size: 21px;
-  bottom: 33px;
+/*  font-size: 21px;
+  bottom: 33px;*/
 }
 
 #projects a h6.filtered {

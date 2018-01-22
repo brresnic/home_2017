@@ -372,31 +372,15 @@ hr:before {
   left: 40%;
   text-align: center;
   color: #161616;
-}
-
-#intro-text p a{
-  font-size: 32px;
-  font-family: 'brandon-medium';
-  text-decoration: none;
-}
-
-#intro-text p:nth-child(1) {
   font-family: 'brandon-light';
   padding: 0px;
-  top: 210px;
+  top: 170px;
   width: 590px;
   height: 200px;
   left: calc(50% - 295px);
   font-size: 32px;
-}
-
-#intro-text p:nth-child(2) {
-  font-family: 'brandon-bold';
-
-  bottom: 100px;
-  font-size: 48px;
-  width: 48px;
-  left: calc(50% - 20px);
+  cursor: pointer;
+  z-index: 2;
 }
 
 #intro-text.cleared {
@@ -601,6 +585,7 @@ hr:before {
   left: 0px;
   z-index: -1;
   display: block;
+  opacity: .7;
 }
 
 #texture {

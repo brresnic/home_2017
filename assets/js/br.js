@@ -1,4 +1,10 @@
 var initialized = false;
+var artLoaded = false;
+// $( window ).load(function() {
+//   //wait to load the art page until everything else loads
+//   loadArt();
+// });
+
 $( document ).ready(function() {
 
   // initial nav based on hash
@@ -7,6 +13,9 @@ $( document ).ready(function() {
     triggerPage(hash);
     if(hash != 'intro') {
       $('#nav').removeClass('no-transition');
+      if(hash == 'art') {
+        loadArt();
+      }
     }
   } else {
     triggerPage('intro');
@@ -45,6 +54,11 @@ $( document ).ready(function() {
     }
   });
 
+  $('#intro-text p').click(
+  function(){
+    triggerPage("proj");
+  });
+
   $('.project-nav').click(
   function(){
     triggerPage("proj");
@@ -58,6 +72,7 @@ $( document ).ready(function() {
   // art
   $('.art-nav').click(
     function(){
+      loadArt();
       triggerPage('art');
   });
   // about
@@ -332,5 +347,10 @@ function adjustMenuItems(position) {
 }
 
   // TODO dynamically load content (lazyload pages)
-
+function loadArt() {
+  if(!artLoaded) {
+    artLoaded = true;
+    $("#art-content").load("art.html");
+  }
+}
 
