@@ -242,31 +242,7 @@ hr:before {
 }
 
 #texture img:nth-child(1) {
-/*  position: relative;
-  top: -265px;
-  opacity: 1;
-    -webkit-transform: rotate(-50deg);
-    transform: rotate(27deg);*/
 
-
-/*  width: 200vw;
-  position: fixed;
-  bottom: -120vh;
-  right: -70vw;
-  opacity: .3;
-    -webkit-transform: scaleX(-1) rotate(-90deg);
-    transform: scaleX(-1) rotate(-90deg);*/
-
-/*  width: 140vw;
-  position: fixed;
-  bottom: -80vh;
-  right: -10vw;
-  opacity: .2;
-  width: 50vw;
-  bottom: 0vw;
-    -webkit-transform: scaleX(-1) rotate(-90deg);
-    transform: scaleX(-1) rotate(-90deg);
-*/
   width: 100vw;
   position: fixed;
   top: -80vw;
@@ -279,15 +255,7 @@ hr:before {
 }
 
 #texture img:nth-child(2) {
-/*      width: 800px;
-  opacity: 1;
-  position: fixed;
-  bottom: -285px;
-  right: -350px;
-  opacity: .3;
-    -webkit-transform: scaleX(-1) rotate(-90deg);
-    transform: scaleX(-1) rotate(-90deg);
-*/
+
   width: 100vw;
   position: fixed;
   bottom: -60vw;
@@ -297,29 +265,6 @@ hr:before {
   transform: scaleX(-1) rotate(90deg);
   z-index: -1;
 }
-
-/*#home img:nth-child(5) {
-  width: 800px;
-  opacity: 1;
-  position: fixed;
-  bottom: -285px;
-  left: -350px;
-  opacity: .3;
-    -webkit-transform: scaleX(-1) rotate(90deg);
-    transform: scaleX(-1) rotate(90deg);
-}
-
-#home img:nth-child(6) {
-      width: 800px;
-  opacity: 1;
-  position: fixed;
-  bottom: -285px;
-  right: -350px;
-  opacity: .3;
-    -webkit-transform: scaleX(-1) rotate(-90deg);
-    transform: scaleX(-1) rotate(-90deg);
-}*/
-
 
 #home {
   cursor: pointer;
@@ -440,6 +385,16 @@ hr:before {
 .project iframe {
   display: block;
   margin: 25px auto;
+}
+
+.project #nav a:nth-child(2) {
+  top: 8px;
+}
+.project #nav a:nth-child(3) {
+  top: 8px;
+}
+.project #nav a:nth-child(4) {
+  top: 8px;
 }
 
 .projs {

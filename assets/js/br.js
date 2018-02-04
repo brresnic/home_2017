@@ -39,6 +39,7 @@ $( document ).ready(function() {
   // scroll when the arrow on the art page is clicked
   $('#art-content div:nth-child(4) img').click(
   function(){
+    console.log('arrow clicked');
     $('html, body').animate({
         scrollTop: 800
      }, 350);
