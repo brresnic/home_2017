@@ -24,12 +24,10 @@
 }
 
 #projects a {
-/*  width: 170px;*/
   white-space: nowrap;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all .45s;
   transition: all .45s;
-  pointer-events: none;
 }
 
 #projects a.focused {
@@ -78,14 +76,14 @@
 }*/
 
 #projects div a {
-  height: 150px;
+  height: 100px;
   position: relative;
 }
 
 #projects div a h6{
   margin: 0 auto;
   position: absolute;
-  bottom: 40px;
+  bottom: -13px;
   width: 100%;
   text-align: left;
 }
@@ -93,41 +91,43 @@
 #projects div a h5{
   margin: 0 auto;
   position: absolute;
-  bottom: 53px;
+  bottom: 5px;
   width: 100%;
   text-align: left;
 }
 
-#projects div a img{
+#projects div a:hover h5{
+  font-family: brandon-medium;
+}
+
+#projects div a img {
   margin: 0;
   width: 100%;
-/*  left: 0;
-  right: 0;
-*/}
+}
 
 
 #projects #AR {
   display: flex;
   width: 100%;
   padding-bottom: 56px;
-/*  width: 360px;
-  position: relative;
-  top: 60px;
-  max-height: 225px;*/
+  justify-content: flex-start;
 }
 
 #projects #AR div {
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 365px;
+  width: 260px;
 }
 
 #projects #AR div div {
   justify-content: flex-start;
   flex-direction: row;
   margin: 0;
-  padding-left: 46px;
   width: 450px;
+}
+
+#projects #AR a {
+  height: auto;
 }
 
 #projects #AR img{
@@ -135,22 +135,30 @@
   max-height: 190px;
 }
 
-#projects #AR h5{
-  font-size: 24px;
-  padding-left: 46px;
-  height: 26px;
-  text-align: left;
-/*  position: relative;
-  bottom: 38px;
-  right: 40px;*/
+#projects #AR div a{
+  height: 46px;
+  width: 205px;
 }
 
-#projects #AR h6{
-/*  position: relative;
-  top: -38px;*/
-/*  display: inline-block;
-  white-space: nowrap;
-  left: 10px;*/
+#projects #AR div h5{
+  font-size: 24px;
+  text-align: left;
+}
+
+#projects #AR a:hover h5{
+  font-family: brandon-medium;
+}
+
+#projects #AR h5.hovered{
+  font-family: brandon-medium;
+}
+
+#projects #AR img.hovered {
+  opacity: 1;
+}
+
+#projects #AR h6 {
+  cursor: default;
 }
 
 #projects #AR h6.active {
@@ -219,12 +227,18 @@
     pointer-events: none;
   }
 
+  #projects div a {
+    height: 175px;
+  }
+
   #projects div a h6 {
     text-align: center;
+    bottom: 65px;
   }
 
   #projects div a h5 {
     text-align: center;
+    bottom: 83px;
   }
 
   #projects div a img {
@@ -243,6 +257,10 @@
     display: block;
     margin: 0 auto;
     right: 0px;
+  }
+
+  #projects.active #AR a {
+    width: 100%;
   }
 
   #projects.active #AR h5 {

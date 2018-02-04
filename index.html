@@ -28,11 +28,6 @@
           <a class='art-nav'>Art</a>
           <a class="about-nav">About</a>
         </div>
-<!--         <div>
-          <a class='project-nav' class='all'>Projects</a>
-          <a class='art-nav'>Art</a>
-          <a class="about-nav">About</a>
-        </div> -->
       </div>
       <div id='intro-text' class='cleared'>
         <p> Hi! I'm a data-driven designer and developer.<!--I'm a creative technologist. <br> I <a>research</a> thoroughly, <a>design</a> playfully, <br> and <a>code</a> data-driven experiences.</p> -->
@@ -54,11 +49,37 @@
         </div>
         <a class="about-nav">About</a>
       </div>
+      <!-- Mobile nav, adapted from Erik Terwan's codepen -->
+      <!-- https://codepen.io/erikterwan/pen/EVzeRP   -->
+      <nav role="navigation">
+        <div id="mobileHam">
+
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a class='project-nav'>Projects</a>
+            <a class='art-nav'>Art</a>
+            <div class='cleared'>
+              <a class="active"  href="#novellas">Novellas</a>
+              <a href="#installations">Installations</a>
+              <a href="#singer">Singer/Songwriter</a>
+              <a href="#furniture">Furniture</a>
+              <a href="#musicvideo">Music Videos</a>
+              <a href="#electronic">Electric/Ambient</a>
+            </div>
+            <a class="about-nav">About</a>
+          </ul>
+        </div>
+      </nav>
       <div id="projects" class=''>
-        <a id="AR" href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b'>
-          <img src = "assets/ico/ar-stretch.png">
+        <div id="AR">
+          <a href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b' target="_blank"><img src = "assets/ico/ar-stretch.png"></a>
           <div>
-            <h5> AR Data Visualization</h5>
+             <a href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b' target="_blank"><h5> AR Data Visualization</h5></a>
             <div>
               <h6 class='bigdata'> Big Data</h6>
               <h6 class='comma'>,</h6>
@@ -67,7 +88,7 @@
               <h6 class='spatial cleared'> Spatial Experience </h6>
             </div>
           </div>
-        </a>
+        </div>
         <div>
           <a id="graph" href='projects/graph.html'>
             <img src = "assets/ico/graph.png">
@@ -75,13 +96,13 @@
             <h6 class='bigdata'> Big Data </h6>
 
           </a>
-          <a href='assets/fingerprint.pdf' id="AP">
+          <a href='assets/fingerprint.pdf' target="_blank" id="AP">
             <img src = "assets/ico/metrics.png">
             <h5> Usage Metrics </h5>
             <h6 class='user'> User Behavior </h6>
 
           </a>
-          <a href='http://smallhouseswoon.com/montpelier-home/' id="krunkle">
+          <a href='http://smallhouseswoon.com/montpelier-home/' target="_blank" id="krunkle">
             <img src = "assets/ico/krunkle.png">
             <h5> Krunkle House </h5>
             <h6 class='spatial'> Spatial Experience </h6>
@@ -102,8 +123,8 @@
      </div>
 
       <div id="about-content">
-          <img src = "assets/Benportfoliopic.JPG">
-        <p>Hi! My name is Ben. Here's my <a href='assets/BenResnickResume.pdf'>resume</a> and <a href='https://www.linkedin.com/in/benjamin-resnick-7b602b7b/'>LinkedIn</a>. </p>
+          <img src = "assets/Benportfoliopic.jpg">
+        <p>Hi! My name is Ben. Here's my <a target="_blank" href='assets/BenResnickResume.pdf'>resume</a> and <a target="_blank" href='https://www.linkedin.com/in/benjamin-resnick-7b602b7b/'>LinkedIn</a>. </p>
           <p> I'm a data-driven designer and developer<!-- creative technologist -->.  I look for projects that combine imaginative thinking and real-world impact. </p>
           <p>Most of my work experience has been on software product teams. But I’ve also designed and built a small house, crafted business proposals, and delivered user experiences that blend physical and digital spaces (sometimes leveraging AR and VR). The common thread connecting my pursuits has been collaborative creativity.</p>
           <p>I’m a jack of many trades. On product teams, I often fall into an underserved role that helps to accelerate outcomes. I’m comfortable performing <span> user research</span>, <span> full-stack development</span>, and <span> data science</span>. I have some pretty strong opinions on quantitative user research, a topic that draws on (and has helped me to develop) all three of those skill sets. I enjoy writing copy, tutorials, and product specifications. Usually my team’s needs, and my deliverables, evolve throughout the product lifecycle (generative research &#8594 iterative prototyping &#8594 continuous deliverly). </p>
