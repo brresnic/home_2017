@@ -25,25 +25,22 @@ iframe {
 
 #art-content div:nth-child(4) {
   flex-basis: 100%;
-  top: 50px;
 }
 
 #art-content div:nth-child(4) img {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 0px;
-  cursor: pointer;
+  top: 50px;
   -webkit-transition: all .2s;
   transition: all .2s;
   transform: rotate(90deg);
   height: 75%;
-  opacity: .75;
+  opacity: .8;
 }
 
 #art-content div:nth-child(4) img:hover {
-  top: 10px;
-  opacity: 1;
+  top: 60px;
 }
 
 #art-content h4{
@@ -76,6 +73,7 @@ iframe {
 #art-content .full-width {
   margin: 0 auto;
   display: block;
+  padding-bottom: 40px;
 }
 
 #art-content h4:nth-child(1) {
