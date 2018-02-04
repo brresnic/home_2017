@@ -397,6 +397,13 @@ hr:before {
   top: 8px;
 }
 
+
+.project #nav a:nth-child(1) {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
 .projs {
   position: relative;
 /*  left: -7px;*/
@@ -413,7 +420,7 @@ hr:before {
   }
 
   #home {
-    top: 155px;
+    top: -65px;
   }
 
   #home img {
@@ -451,10 +458,6 @@ hr:before {
 
   h4 {
     text-align: left;
-  }
-
-  #home {
-    top: 195px;
   }
 }
 
@@ -575,5 +578,3 @@ hr:before {
     stroke-dashoffset: 950;
   }
 }
-
-

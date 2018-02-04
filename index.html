@@ -28,11 +28,6 @@
           <a class='art-nav'>Art</a>
           <a class="about-nav">About</a>
         </div>
-<!--         <div>
-          <a class='project-nav' class='all'>Projects</a>
-          <a class='art-nav'>Art</a>
-          <a class="about-nav">About</a>
-        </div> -->
       </div>
       <div id='intro-text' class='cleared'>
         <p> Hi! I'm a data-driven designer and developer.<!--I'm a creative technologist. <br> I <a>research</a> thoroughly, <a>design</a> playfully, <br> and <a>code</a> data-driven experiences.</p> -->
@@ -54,9 +49,35 @@
         </div>
         <a class="about-nav">About</a>
       </div>
+      <!-- Mobile nav, adapted from Erik Terwan's codepen -->
+      <!-- https://codepen.io/erikterwan/pen/EVzeRP   -->
+      <nav role="navigation">
+        <div id="mobileHam">
+
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a class='project-nav'>Projects</a>
+            <a class='art-nav'>Art</a>
+            <div class='cleared'>
+              <a class="active"  href="#novellas">Novellas</a>
+              <a href="#installations">Installations</a>
+              <a href="#singer">Singer/Songwriter</a>
+              <a href="#furniture">Furniture</a>
+              <a href="#musicvideo">Music Videos</a>
+              <a href="#electronic">Electric/Ambient</a>
+            </div>
+            <a class="about-nav">About</a>
+          </ul>
+        </div>
+      </nav>
       <div id="projects" class=''>
         <div id="AR">
-          <a href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b'><img src = "assets/ico/ar-stretch.png" target="_blank"></a>
+          <a href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b' target="_blank"><img src = "assets/ico/ar-stretch.png"></a>
           <div>
              <a href='https://medium.com/inside-machine-learning/visualizing-high-dimensional-data-in-augmented-reality-2150a7e62d5b' target="_blank"><h5> AR Data Visualization</h5></a>
             <div>

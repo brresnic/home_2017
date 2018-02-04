@@ -30,9 +30,11 @@ $( document ).ready(function() {
       if($('.art-nav').hasClass('active')) {
         $('.art-nav + div').removeClass('cleared');
       }
+      $('#mobileHam').addClass('cleared');
     } else {
       $('#sticky-nav').removeClass('show');
       $('.art-nav + div').addClass('cleared');
+      $('#mobileHam').removeClass('cleared');
     }
   });
 
@@ -227,6 +229,7 @@ function triggerPage(page) {
               $('#intro-text').removeClass('cleared');
               $('#home').removeClass('cleared');
               $('#nav').addClass('intro');
+              $('#mobileHam').addClass('intro');
               setTimeout(function(){$('#nav').removeClass('no-transition');}, 100);
               break;
       }
@@ -297,8 +300,10 @@ function clearIntroText() {
   $('#intro-text').addClass('cleared');
   $('#home').addClass('cleared');
   $('#nav').removeClass('intro');
+  $('#mobileHam').removeClass('intro');
   $('#nav').removeClass('projs');
   $('body > div:nth-child(1)').removeClass('projs');
+  $('#mobileHam input').prop('checked', false);
 }
 
 // trigger and recursively focus stagger the focusing of selected projects
