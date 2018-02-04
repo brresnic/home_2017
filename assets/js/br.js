@@ -148,6 +148,19 @@ $( document ).ready(function() {
 
   },500,true));
 
+  // link the "AR" image's hover state to it's h5 image hover state
+  var items = $("#projects #AR a");
+  items.hover(function() {
+          // Mouseover state
+          $('#projects #AR h5').addClass("hovered");
+          $('#projects #AR img').addClass("hovered");
+      },
+      function() {
+          // Mouseout state
+          $('#projects #AR h5').removeClass("hovered");
+          $('#projects #AR img').removeClass("hovered");
+  });
+
 });
 
 // David Walsh debounce, modified to trigger after timeout on second call

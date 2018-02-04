@@ -1,6 +1,5 @@
 function adjustMenuItems() {
   var position = $(this).scrollTop();
-  // console.log('position ' + position);
 
   $('.section').each(function() {
       var target = $(this).offset().top;
@@ -103,12 +102,8 @@ function trigger(t, projs) {
     t = t.reverse();
     recursivelyFocus(t);
   }
-
-
-  // t.forEach(function(e){//fades selected to full
-  //   $('#'+e).addClass('focused');
-  // });
 }
+
 function recursivelyFocus(t){
 
   if(t.length > 0) {
