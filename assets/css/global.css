@@ -376,6 +376,20 @@ hr:before {
   max-height: 320px;
 }
 
+.project .side-by-side.three-by-side img{
+  max-width: 200px;
+
+  height: 300px;
+}
+
+.project .side-by-side.three-by-side img:nth-child(1) {
+  margin-right: 40px;
+}
+
+.project .side-by-side.three-by-side img:nth-child(2) {
+  margin-right: 40px;
+}
+
 .project iframe~i {
   text-align: center;
   display: block;
